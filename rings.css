@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: cover;
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#heading {
+    color: rgb(86, 37, 37);
+    font-size: 2.5rem;
+    font-family: "Baskervville SC", serif;
+    font-weight: 650;
+    font-style: normal;
+margin-left: 40px;
+}
+
+#heading:hover {
+    transform: scale(1.03);
+}
+
+a {
+    font-family: "Baskervville SC", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.header {
+   top: 0;
+   left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f2f2fb;
+   
+}
+.head-icons{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+ }
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.details a {
+    color: #1d0a0a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.details a:hover {
+    color: red;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    margin-top: 50px;
+}
+
+.box1 .fingerrings {
+    
+    width: 250px;
+    padding: 15px 0;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.fingerrings img {
+    border-radius: 10px;
+}
+
+.fingerrings img:hover {
+    transform: scale(1.01);
+}
+h3{
+    color: white;
+    font-size: 45px;
+    padding: 25px;
+}
+
+h1, h2{
+    color: white;
+    font-size: 15px;
+
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgb(130, 110, 110);
+    border-radius: 5px;
+    padding: 10px 15px;
+    min-height: 100px;
+}
+
+.footer h4 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.data a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail {
+    margin-right: 20px;
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(52, 50, 50);
+}
+
+#heading {
+    color: rgb(86, 37, 37);
+    font-size: 2.5rem;
+    font-family: "Baskervville SC", serif;
+    font-weight: 650;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+#heading:hover {
+    transform: scale(1.03);
+}
+
+a {
+    font-family: "Baskervville SC", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f2f2ed;
+
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.details a {
+    color: #1d0a0a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.details a:hover {
+    color: red;
+}
+
+.about {
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.3rem;
+}
+
+.about p {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.describe p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 18px;
+}
+
+.describe h1 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 490px;
+}
+.footer {
+    background-color: rgb(130, 110, 110);
+    border-radius: 5px;
+    padding: 10px 15px;
+    min-height: 100px;
+}
+
+.footer h4 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.data a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail {
+    margin-right: 20px;
+}
+
+
