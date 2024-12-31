@@ -19,6 +19,7 @@ function showModal(title, price, imgSrc, description) {
   document.getElementById('modal-description').textContent = description;
 
   document.getElementById('popup1').style.display = 'flex';
+  document.body.classList.add('modal-open');
 }
 
 function closeModal() {

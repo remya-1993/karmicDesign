@@ -118,6 +118,9 @@ h1, h2{
 
     margin-top: 10px;
 }
+body.modal-open {
+    overflow: hidden;
+}
 .popup1 {
     display: none;
     background: #dcdbdb91;

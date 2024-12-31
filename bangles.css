@@ -124,6 +124,9 @@ h1:hover {
 .bangles img:hover {
     transform: scale(1.02);
 }
+body.modal-open {
+    overflow: hidden;
+}
 .popup1 {
     display: none;
     background: #dcdbdb91;
@@ -154,13 +157,11 @@ h1:hover {
 .popup2 {
     display: block;
     position: fixed;
-    /* margin: 200px 380px 350px 380px; */
     top: 0;
     left: 0;
     width: 100%; 
     min-height: 100vh;
     background: #dcdbdbb3;
-    /* background-color: rgba(11, 11, 11, 0.982);  */
     justify-content: center; 
     align-items: center;
     z-index: 9999; 
