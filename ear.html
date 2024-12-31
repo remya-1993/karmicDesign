@@ -54,76 +54,155 @@
 
         <div class="box1">
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg" alt="" width="230px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg" alt="" width="230px"
+                    onclick="showModal('Multi Color Danglers', 'Rs. 150.00', './img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg', 'Made up with multicoloured stones and beads.')">
                 <br>
                 <h1>Multi Color Danglers</h1>
                 <h2>RS. 150.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Single Line Neckpiece', 'Rs. 150.00', './img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg', 'Made up of stones. It is a long chain suitable for sarees. Green and white color stones with long golden chain.')">
+                    Know More</button>
+            </div>
+            <div class="popup1" id="popup1" style="display: none;">
+                <div class="popup-wrapper">
+                    <div class="img">
+                        <img id="modal-img" src="" width="300px">
+                    </div>
+                    <div class="img_details">
+                        <h1 id="modal-title"></h1>
+                        <h5 id="modal-price"></h5>
+                        <button class="buyNow" onclick="showPopup2()">Buy Now</button>
+                        <p>Description:</p>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div class="close" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup2" id="popup2" style="display: none;">
+                <div class="popup-wrapper2">
+                    <div class="customerData">
+                        <input class="cusName" id="cusName" type="text" placeholder="Enter name">
+                        <input class="CusNumber" id="CusNumber" type="number" maxlength="10" placeholder="Enter number">
+                        <input class="quantity" id="quantity" type="number" maxlength="2" placeholder="Enter quantity">
+                        <button>Proceed</button>
+                    </div>
+                    <div class="close1" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
+                    </div>
+                </div>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg" alt="" width="230px" height="260px">
+                <img src="./img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg" alt="" width="230px" height="260px"
+                    onclick="showModal('Golden Jhumka', 'Rs. 125.00', './img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg', 'Made up with golden and black coloured beads. Its suitable for traditional dresses.')">
                 <br>
                 <h1>Golden Jhumka</h1>
                 <h2>RS. 125.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Golden Jhumka', 'Rs. 125.00', './img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg', 'Made up with golden and black coloured beads. Its suitable for traditional dresses.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg" alt="" width="230px" height="260px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg" alt="" width="230px" height="260px"
+                    onclick="showModal('Multi Color Jhumka', 'Rs. 120.00', './img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg', 'Made up with multicoloured beads along with ear chain.')">
                 <br>
                 <h1>Multi Color Jhumka</h1>
                 <h2>RS. 120.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Multi Color Jhumka', 'Rs. 120.00', './img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg', 'Made up with multicoloured beads along with ear chain.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg" alt="" width="230px" height="260px">
+                <img src="./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg" alt="" width="230px" height="260px"
+                    onclick="showModal('Beaded Earrings', 'Rs. 100.00', './img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg', 'Made up with multicoloured beads.')">
                 <br>
                 <h1>Beaded Earrings</h1>
                 <h2>RS. 100.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Beaded Earrings', 'Rs. 100.00', './img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg', 'Made up with multicoloured beads.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('White Color Danglers', 'Rs. 170.00', './img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg', 'Made up with white-coloured beads.')">
                 <br>
                 <h1>White Color Danglers</h1>
                 <h2>RS. 170.00</h2>
+                <button class="buynow"
+                    onclick="showModal('White Color Danglers', 'Rs. 170.00', './img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg', 'Made up with white-coloured beads.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Traditional Jhumka', 'Rs. 115.00', './img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg', 'Made up with golden coloured beads.')">
                 <br>
                 <h1>Traditional Jhumka</h1>
                 <h2>RS. 115.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Traditional Jhumka', 'Rs. 115.00', './img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg', 'Made up with golden coloured beads.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Beaded Danglers', 'Rs. 140.00', './img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg', 'Made up with multicoloured beads.')">
                 <br>
                 <h1>Beaded Danglers</h1>
                 <h2>RS. 140.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Beaded Danglers', 'Rs. 140.00', './img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg', 'Made up with multicoloured beads.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Stone Earrings', 'Rs. 110.00', './img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg', 'Made up with stone and multicoloured beads.')">
                 <br>
                 <h1>Stone Earrings</h1>
                 <h2>RS. 110.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Stone Earrings', 'Rs. 110.00', './img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg', 'Made up with stone and multicoloured beads.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Multi Jhumka', 'Rs. 130.00', './img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg', 'Made up with golden beads.')">
                 <br>
                 <h1>Multi Jhumka</h1>
                 <h2>RS. 130.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Multi Jhumka', 'Rs. 130.00', './img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg', 'Made up with golden beads.')">Know
+                    More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Black Stone Earrings', 'Rs. 180.00', './img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg', 'Made up with black-coloured stones.')">
                 <br>
                 <h1>Black Stone Earrings</h1>
                 <h2>RS. 180.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Black Stone Earrings', 'Rs. 180.00', './img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg', 'Made up with black-coloured stones.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Multi Color Stud', 'Rs. 180.00', './img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg', 'Made up with multicoloured stones.')">
                 <br>
                 <h1>Multi Color Stud</h1>
                 <h2>RS. 180.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Multi Color Stud', 'Rs. 180.00', './img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg', 'Made up with multicoloured stones.')">
+                    Know More</button>
             </div>
             <div class="earrings">
-                <img src="./img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg" alt="" width="230px" height="225px">
+                <img src="./img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg" alt="" width="230px" height="225px"
+                    onclick="showModal('Metal Jhumka', 'Rs. 180.00', './img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg', 'Made up with metal beads.')">
                 <br>
                 <h1>Metal Jhumka</h1>
                 <h2>RS. 180.00</h2>
+                <button class="buynow"
+                    onclick="showModal('Metal Jhumka', 'Rs. 180.00', './img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg', 'Made up with metal beads.')">
+                    Know More</button>
             </div>
         </div>
     </div>
@@ -161,6 +240,8 @@
         </div>
     </div>
 
+
+    <script src="./ear.js"></script>
 
 </body>
 
