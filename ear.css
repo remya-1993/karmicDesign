@@ -92,6 +92,7 @@ h1:hover {
 }
 .earrings img{
     border-radius: 10px;
+    cursor: pointer;
 }
 .earrings img:hover {
     transform: scale(1.01);
@@ -198,6 +199,7 @@ body.modal-open {
 .img{
     margin-top: 30px;
     margin-left: 70px;
+    cursor: pointer;
 }
 .img_details{
     margin-top: 25px;

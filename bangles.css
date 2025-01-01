@@ -119,6 +119,7 @@ h1:hover {
 
 .bangles img {
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .bangles img:hover {

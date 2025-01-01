@@ -87,6 +87,7 @@ a {
 
 .fingerrings img {
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .fingerrings img:hover {
@@ -200,6 +201,7 @@ body.modal-open {
 .img{
     margin-top: 30px;
     margin-left: 70px;
+    cursor: pointer;
 }
 .img_details{
     margin-top: 25px;
