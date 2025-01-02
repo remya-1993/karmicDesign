@@ -50,7 +50,7 @@ function whatsapp() {
   var phone = document.querySelector('.CusNumber').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
 
-  var productLink = "file:///C:/Users/remya/Desktop/Java%20script%20learning/DOM/Calculator/KarmicDesigns/neck.html"
+  var productLink = "https://karmic-design.vercel.app/neck.html"
 
   if (!name || !phone || !qty) {
     alert("Please fill out all fields before sending the message.");
