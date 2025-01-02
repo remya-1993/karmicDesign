@@ -189,6 +189,9 @@ body.modal-open {
     margin-top: 20px;
  
 }
+.customerData label{
+    color: white;
+}
 .customerData button{
     width: 265px;
     height: 35px; 

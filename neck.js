@@ -47,25 +47,26 @@ function showPopup2() {
 function whatsapp() {
 
   var name = document.querySelector('.cusName').value.trim();
-  var phone = document.querySelector('.CusNumber').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
+  var pcode = document.querySelector('.proPc').value.trim();
+  
 
   var productLink = "https://karmic-design.vercel.app/neck.html"
 
-  if (!name || !phone || !qty) {
+  if (!name || !pcode || !qty) {
     alert("Please fill out all fields before sending the message.");
     return;
   }
-  if (isNaN(phone) || phone.length < 10 || phone.length > 10) {
-    alert("Please enter a valid 10-digit phone number.");
-    return;
-  }
+  // if (isNaN(phone) || phone.length < 10 || phone.length > 10) {
+  //   alert("Please enter a valid 10-digit phone number.");
+  //   return;
+  // }
 
   var phonenumber = "918590210665";
   var url = "https://wa.me/" + phonenumber + "?text=" +
     encodeURIComponent("*Name:* " + name + "\n" +
-      "*Phone Number:* " + phone + "\n" +
-      "*Product Quantity:* " + qty + "\n" +
-      "*Product Link:* " + productLink);
+      "*Product Quantity:* " + "Kd - " + qty + "\n" +
+      "*Phone Number:* " + phone);
+     
   window.open(url, '_blank');
 }

@@ -202,6 +202,9 @@ body.modal-open {
     border-radius: 5px;
     cursor: pointer;
 }
+.customerData label{
+    color: white;
+}
 .close1{
     margin: 0;
     cursor: pointer;
