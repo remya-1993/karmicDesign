@@ -5,9 +5,9 @@ function toggleMenu() {
 
 function imgdetails1() {
   window.location.assign("neckpieces.html")
-} 
+}
 
-function buynow1(){
+function buynow1() {
   window.location.assign("necksub.html")
 }
 
@@ -26,13 +26,13 @@ function closeModal() {
   document.getElementById('popup1').style.display = 'none';
 }
 
-function showModal1(cusName, cusNumber, quantity){
+function showModal1(cusName, cusNumber, quantity) {
   document.getElementById('cusName').value = cusName;
   document.getElementById('cusNumber').value = cusNumber;
-  document.getElementById('quantity').value= quantity;
+  document.getElementById('quantity').value = quantity;
 
-  document.getElementById('popup1').style.display = 'none'; 
-  document.getElementById('popup2').style.display = 'block'; 
+  document.getElementById('popup1').style.display = 'none';
+  document.getElementById('popup2').style.display = 'block';
 }
 
 function closeModal() {
@@ -45,6 +45,14 @@ function showPopup2() {
   document.getElementById('popup2').style.display = 'flex';
 }
 
-function whatsapp(){
-  window.location.assign("https://wa.me/917736848705");
+function whatsapp() {
+  // window.location.assign("https://wa.me/917736848705");
+  var phonenumber = "+917736848705";
+  var name = document.querySelector('.cusName').value;
+  var phone = document.querySelector('.cusNumber').value;
+  var qty = document.querySelector('.quantity').value;
+
+  var url = "https://wa.me/" + phonenumber + "?text=" + "*Name :* " + name + "%0a" + "*Phonenumber :* " + phone + "%0a" + "*Product quantity :* " + qty + "%0a";
+  window.open(url, '_blank').focus();
+
 }

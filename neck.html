@@ -93,11 +93,18 @@
             <div class="popup2" id="popup2" style="display: none;">
                 <div class="popup-wrapper2">
                     <div class="customerData">
-                        <input class="cusName" id="cusName" type="text" placeholder="Enter name">
-                        <input class="CusNumber" id="CusNumber" type="number" maxlength="10"
-                            placeholder="Enter number">
-                        <input class="quantity" id="quantity" type="number" maxlength="2" placeholder="Enter quantity">
-                        <button onclick="whatsapp()">Proceed</button>
+                        <label for="">Name: </label>
+                        <br>
+                        <input class="cusName" id="cusName" type="text">
+                     <br>
+                        <label for="">Phone number: </label>
+                        <br>
+                        <input class="CusNumber" id="CusNumber" type="number" maxlength="10">
+                        <br>
+                        <label for="">Product Quantity: </label>
+                        <br>
+                        <input class="quantity" id="quantity" type="number" maxlength="2">
+                        <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
                     </div>
                     <div class="close1" onclick="closeModal('popup1')">
                         <img src="./img/close.png" width="30px">

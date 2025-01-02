@@ -187,6 +187,9 @@ body.modal-open {
 .customerData{
     align-items:center;
 }
+.customerData label{
+    color: white;
+}
 .customerData input{
     width: 250px;
     height: 25px;
@@ -194,7 +197,6 @@ body.modal-open {
     border: 0;
     padding: 6px;
     margin-top: 20px;
- 
 }
 .customerData button{
     width: 265px;
@@ -202,6 +204,8 @@ body.modal-open {
     padding: 6px;
     margin-top: 20px;
     cursor: pointer;
+    background-color: rgb(71, 235, 71);
+    border-radius: 5px;
 }
 .close1{
     margin: 0;
