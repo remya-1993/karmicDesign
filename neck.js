@@ -61,7 +61,6 @@ function whatsapp() {
   //   alert("Please enter a valid 10-digit phone number.");
   //   return;
   // }
-
   var phonenumber = "918590210665";
   var url = "https://wa.me/" + phonenumber + "?text=" +
     encodeURIComponent("*Name:* " + name + "\n" +
