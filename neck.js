@@ -50,21 +50,21 @@ function showPopup2() {
 
 function whatsapp() {
 
-  // window.location.assign("https://wa.me/917736848705")
+  window.location.assign("https://wa.me/917736848705")
 
-  var phonenumber = "+917736848705";
+  // var phonenumber = "+917736848705";
 
-  var name = document.querySelector('.cusName').value;
-  var phone = document.querySelector('.cusNumber').value;
-  var qty = document.querySelector('.quantity').value;
+  // var name = document.querySelector('.cusName').value;
+  // var phone = document.querySelector('.cusNumber').value;
+  // var qty = document.querySelector('.quantity').value;
 
-  if (!name || !phone || !qty) {
-    alert("Please fill out all fields before proceeding.");
-    return;
-  }
-  var url = "https://wa.me/" + phonenumber + "?text=" +
-    encodeURIComponent("*Name:* " + name + "\n" +
-      "*Phone:* " + phone + "\n" +
-      "*Quantity:* " + qty);
-  window.open(url, '_blank');
+  // if (!name || !phone || !qty) {
+  //   alert("Please fill out all fields before proceeding.");
+  //   return;
+  // }
+  // var url = "https://wa.me/" + phonenumber + "?text=" +
+  //   encodeURIComponent("*Name:* " + name + "\n" +
+  //     "*Phone:* " + phone + "\n" +
+  //     "*Quantity:* " + qty);
+  // window.open(url, '_blank');
 }
