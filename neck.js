@@ -52,7 +52,13 @@ function whatsapp() {
   var phone = document.querySelector('.cusNumber').value;
   var qty = document.querySelector('.quantity').value;
 
-  var url = "https://wa.me/" + phonenumber + "?text=" + "*Name :* " + name + "%0a" + "*Phonenumber :* " + phone + "%0a" + "*Product quantity :* " + qty + "%0a";
-  window.open(url, '_blank').focus();
+  if (!name || !phone || !qty) {
+    alert("Please fill out all fields before proceeding.");
+    return;
+}
 
+  var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent("*Name:* " + name + "\n" + 
+    "*Phonenumber:* " + phone + "\n" + 
+    "*Product quantity:* " + qty);
+  window.open(url, '_blank');
 }
