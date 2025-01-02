@@ -44,3 +44,7 @@ function closeModal() {
 function showPopup2() {
   document.getElementById('popup2').style.display = 'flex';
 }
+
+function whatsapp(){
+  window.location.assign("https://wa.me/917736848705");
+}
