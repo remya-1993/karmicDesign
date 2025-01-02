@@ -50,6 +50,8 @@ function whatsapp() {
   var phone = document.querySelector('.CusNumber').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
 
+  var productLink = "file:///C:/Users/remya/Desktop/Java%20script%20learning/DOM/Calculator/KarmicDesigns/neck.html"
+
   if (!name || !phone || !qty) {
     alert("Please fill out all fields before sending the message.");
     return;
@@ -63,31 +65,7 @@ function whatsapp() {
   var url = "https://wa.me/" + phonenumber + "?text=" +
     encodeURIComponent("*Name:* " + name + "\n" +
       "*Phone Number:* " + phone + "\n" +
-      "*Product Quantity:* " + qty);
-
-
+      "*Product Quantity:* " + qty + "\n" +
+      "*Product Link:* " + productLink);
   window.open(url, '_blank');
 }
-
-
-
-// function whatsapp() {
-
-//   window.location.assign("https://wa.me/917736848705")
-
-//   var phonenumber = "+917736848705";
-
-//   var name = document.querySelector('.cusName').value;
-//   var phone = document.querySelector('.cusNumber').value;
-//   var qty = document.querySelector('.quantity').value;
-
-//   if (!name || !phone || !qty) {
-//     alert("Please fill out all fields before proceeding.");
-//     return;
-//   }
-//   var url = "https://wa.me/" + phonenumber + "?text=" +
-//     encodeURIComponent("*Name:* " + name + "\n" +
-//       "*Phone:* " + phone + "\n" +
-//       "*Quantity:* " + qty);
-//   window.open(url, '_blank');
-// }

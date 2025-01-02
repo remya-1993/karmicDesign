@@ -193,6 +193,8 @@ body.modal-open {
     padding: 6px;
     cursor: pointer;
     margin-top: 20px;
+    background-color: rgb(71, 235, 71);
+    border-radius: 5px;
 }
 .close1{
     margin: 0;
