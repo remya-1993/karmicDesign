@@ -45,45 +45,26 @@ function showPopup2() {
   document.getElementById('popup2').style.display = 'flex';
 }
 
-// function whatsapp() {
-//   // window.location.assign("https://wa.me/917736848705");
-//   var phonenumber = "917736848705";
-//   var name = document.querySelector('.cusName').value;
-//   var phone = document.querySelector('.cusNumber').value;
-//   var qty = document.querySelector('.quantity').value;
 
-//   if (!name || !phone || !qty) {
-//     alert("Please fill out all fields before proceeding.");
-//     return;
-// }
 
-//   var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent("*Name:* " + name + "\n" + 
-//     "*Phonenumber:* " + phone + "\n" + 
-//     "*Quantity:* " + qty);
-//   window.open(url, '_blank');
-// }
 
 function whatsapp() {
-  // Define the recipient phone number
-  var phonenumber = "917736848705";
 
-  // Retrieve input values
+  // window.location.assign("https://wa.me/917736848705")
+
+  var phonenumber = "+917736848705";
+
   var name = document.querySelector('.cusName').value;
   var phone = document.querySelector('.cusNumber').value;
   var qty = document.querySelector('.quantity').value;
 
-  // Validate inputs
   if (!name || !phone || !qty) {
     alert("Please fill out all fields before proceeding.");
     return;
   }
-
-  // Construct the WhatsApp URL
-  var url = "https://wa.me/" + phonenumber + "?text=" + 
-            encodeURIComponent("*Name:* " + name + "\n" + 
-                               "*Phone:* " + phone + "\n" + 
-                               "*Quantity:* " + qty);
-
-  // Open the WhatsApp URL in a new tab
+  var url = "https://wa.me/" + phonenumber + "?text=" +
+    encodeURIComponent("*Name:* " + name + "\n" +
+      "*Phone:* " + phone + "\n" +
+      "*Quantity:* " + qty);
   window.open(url, '_blank');
 }
