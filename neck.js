@@ -65,8 +65,8 @@ function whatsapp() {
   var phonenumber = "918590210665";
   var url = "https://wa.me/" + phonenumber + "?text=" +
     encodeURIComponent("*Name:* " + name + "\n" +
-      "*Product Quantity:* " + "Kd - " + qty + "\n" +
-      "*Phone Number:* " + phone);
+      "*Product Quantity:* "  + qty + "\n" +
+      "*Product Code:* " + "Kd - " + pcode);
      
   window.open(url, '_blank');
 }
