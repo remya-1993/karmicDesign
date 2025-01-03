@@ -193,9 +193,7 @@ function whatsapp() {
   *Product Details:*\n
   *Title:* ${title}\n
   *Price:* ${price}\n
-  *Description:* ${description}\n
-  *Product Link:* ${productLink}\n\n
-  *Image URL:* ${imgSrc}
+  *Description:* ${description}
 `;
 
   var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
