@@ -35,6 +35,7 @@
             <a href="./bangles.html">Bangles</a>
             <a href="./rings.html">Finger Rings</a>
             <a href="./contact.html"> Contact Us</a>
+            <a href="./cart.html">Cart</a>
         </div>
 
         <!-- <div class="head-icons">
@@ -44,12 +45,93 @@
         </div> -->
 
     </div>
-    <div class="container">
 
+    <div class="mainHead">
         <h3>Bangles</h3>
+    </div>
 
-        <div class="box1">
-            <div class="bangles">
+    <div class="box1">
+
+
+        <div id="bangles-container"></div>
+
+        <div class="popup1" id="popup1" style="display: none;">
+            <div class="popup-wrapper">
+                <div class="img">
+                    <img id="modal-img" src="" width="300px" alt="bangles Image">
+                </div>
+                <div class="img_details">
+                    <h1 id="modal-title"></h1>
+                    <h5 id="modal-code"></h5>
+                    <h5 id="modal-price"></h5>
+                    <button class="cart" onclick="addCart()">Add to cart</button>
+                    <button class="buyNow" onclick="showPopup2()">Order on WhatsApp</button>
+                    <p>Description:</p>
+                    <p id="modal-description"></p>
+                </div>
+                <div class="close" onclick="closeModal('popup1')">
+                    <img src="./img/close.png" width="30px">
+                </div>
+            </div>
+        </div>
+        <div class="popup2" id="popup2" style="display: none;">
+            <div class="popup-wrapper2">
+                <div class="customerData">
+                    <label for=""> Your Name: </label>
+                    <br>
+                    <input class="cusName" id="cusName" type="text">
+                    <br>
+                    <br>
+                    <label for="">Product Quantity: </label>
+                    <br>
+                    <input class="quantity" id="quantity" type="number" maxlength="2">
+                    <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
+                </div>
+                <div class="close1" onclick="closeModal('popup1')">
+                    <img src="./img/close.png" width="30px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <h4><u>Contact Us</u></h4>
+            <br>
+            <div class="data">
+                <div>
+                    <a href="">ADDRESS</a>
+                    <br>
+                    <br>
+
+                    <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
+                </div>
+                <div>
+                    <a href="">CALL US</a>
+                    <br>
+                    <br>
+                    <div class="number">
+                        <p>+91 8590210665 </p>
+
+                    </div>
+                </div>
+                <div>
+                    <a href="">EMAIL US</a>
+                    <br>
+                    <br>
+                    <div class="mail">
+                        karmic24@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./bangles.js"></script>
+
+
+    <!-- <div class="bangles">
                 <img src="./img/bang 1.jpeg" alt="" width="230px" height="245px"
                 onclick="showModal('Anti Tarnish Rings', 'Rs. 150.00', './img/bang 1.jpeg', 'Made up with beads and stones.')">
                 <br>
@@ -200,9 +282,9 @@
                 <h2>RS. 110</h2>
                 <button class="buynow" 
                 onclick="showModal('Anti Tarnish Rings', 'Rs. 110.00', './img/Stone2.jpeg', 'Made up with beads and stones.')" > Know More</button>
-            </div>
-        </div>
-    </div>
+            </div> -->
+
+    <!-- </div>
     <div class="footer">
         <div class="wrapper">
             <h4><u>Contact Us</u></h4>
@@ -235,12 +317,10 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
 
-
-
-<script src="./bangles.js"></script>
+  
 </body>
 
 </html>

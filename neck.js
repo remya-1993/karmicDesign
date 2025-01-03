@@ -151,7 +151,6 @@ function buynow1() {
 
 function showModal1(cusName, quantity) {
   document.getElementById('cusName').value = cusName;
-  // document.getElementById('cusNumber').value = cusNumber;
   document.getElementById('quantity').value = quantity;
 
   document.getElementById('popup1').style.display = 'none';
@@ -204,12 +203,63 @@ function whatsapp() {
   window.open(url, '_blank');
 }
 
+function addCart(){
+  window.location.assign("./cart.html")
+}
 
+// function addCart() {
+//   const title = document.getElementById('modal-title').innerText;
+//   const productCode = document.getElementById('modal-code').innerText;
+//   const price = document.getElementById('modal-price').innerText;
+//   const image = document.getElementById('modal-img').src;
+//   const description = document.getElementById('modal-description').innerText;
 
-  // var url = "https://wa.me/" + phonenumber + "?text=" +
-  //   encodeURIComponent("*Name:* " + name + "\n" +
-  //     "*Product Quantity:* " + qty + "\n" +
-  //     "*Product Code:* " + "Kd - " + pcode);
+//   // Create an object with item details
+//   const itemDetails = {
+//     title: title,
+//     productCode: productCode,
+//     price: price,
+//     image: image,
+//     description: description
+//   };
 
-  // window.open(url, '_blank');
+//   // Store it in localStorage
+//   let cart = JSON.parse(localStorage.getItem('cart')) || []; // Get existing cart or initialize a new one
+//   cart.push(itemDetails); // Add the new item to the cart
+//   localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart back to localStorage
 
+//   // alert("Item added to cart!");
+// }
+
+function addCart() {
+  const title = document.getElementById('modal-title').innerText;
+  const productCode = document.getElementById('modal-code').innerText;
+  const price = document.getElementById('modal-price').innerText;
+  const image = document.getElementById('modal-img').src;
+  const description = document.getElementById('modal-description').innerText;
+
+  const itemDetails = {
+    title: title,
+    productCode: productCode,
+    price: price,
+    image: image,
+    description: description,
+    quantity: 1
+  };
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  const existingItemIndex = cart.findIndex(item => item.productCode === productCode);
+
+  if (existingItemIndex > 0) {
+   
+    cart[existingItemIndex].quantity += 1;
+  } else {
+    
+    cart.push(itemDetails);
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  alert("Item added to cart!");
+}

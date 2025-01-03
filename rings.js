@@ -1,11 +1,98 @@
-function showModal(title, price, imgSrc, description) {
+const fingerRings = [
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-151",
+      price: 120,
+      image: "./img/ring1.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-152",
+      price: 100,
+      image: "./img/ring2.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-153",
+      price: 170,
+      image: "./img/ring3.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-154",
+      price: 100,
+      image: "./img/ring4.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-155",
+      price: 110,
+      image: "./img/ring5.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-156",
+      price: 110,
+      image: "./img/ring6.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-157",
+      price: 110,
+      image: "./img/ring7.jpeg",
+      description: "it is a thin shaped finger ring."
+  },
+  {
+      name: "Anti Tarnish Rings",
+      productCode: "Kd-158",
+      price: 110,
+      image: "./img/ring8.jpeg",
+      description: "it is a thin shaped finger ring."
+  }
+];
+
+
+function renderRings() {
+  let fingerRingsHTML = '';
+
+  for (let i = 0; i < fingerRings.length; i++) {
+    fingerRingsHTML += `
+      <div class="fingerrings-item">
+        <img src="${fingerRings[i].image}" alt="${fingerRings[i].name}" width="230px" />
+        <h1>${fingerRings[i].name}</h1>
+        <h2>Product Code: ${fingerRings[i].productCode}</h2>
+        <h3>Price: Rs. ${fingerRings[i].price}</h3>
+        <p>Description: ${fingerRings[i].description}</p>
+        <button 
+          class='buy-btn' 
+          onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")'>
+          Know More
+        </button>
+      </div>
+    `;
+    console.log(fingerRings[i].name);
+  }
+
+  document.getElementById("fingerRings-container").innerHTML = fingerRingsHTML;
+}
+
+renderRings();
+
+function showModal(title, productCode, price, imgSrc, description) {
 
   document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-code').textContent = productCode;
   document.getElementById('modal-price').textContent = price;
   document.getElementById('modal-img').src = imgSrc;
   document.getElementById('modal-description').textContent = description;
 
-  document.getElementById('popup1').style.display = 'flex';
+  document.getElementById('popup1').style.display = 'block';
   document.body.classList.add('modal-open');
 }
 
@@ -13,9 +100,8 @@ function closeModal() {
   document.getElementById('popup1').style.display = 'none';
 }
 
-function showModal1(cusName, cusNumber, quantity) {
+function showModal1(cusName, quantity) {
   document.getElementById('cusName').value = cusName;
-  document.getElementById('cusNumber').value = cusNumber;
   document.getElementById('quantity').value = quantity;
 
   document.getElementById('popup1').style.display = 'none';
@@ -23,7 +109,6 @@ function showModal1(cusName, cusNumber, quantity) {
 }
 
 function closeModal() {
-  // Close both popups
   document.getElementById('popup1').style.display = 'none';
   document.getElementById('popup2').style.display = 'none';
 }
@@ -34,26 +119,37 @@ function showPopup2() {
 
 function whatsapp() {
 
-  function whatsapp() {
+  var name = document.querySelector('.cusName').value.trim();
+  var qty = document.querySelector('.quantity').value.trim();
 
-    var name = document.querySelector('.cusName').value.trim();
-    var qty = document.querySelector('.quantity').value.trim();
-    var pcode = document.querySelector('.proPc').value.trim();
+  var title = document.getElementById('modal-title').textContent.trim();
+  var productCode = document.getElementById('modal-code').textContent.trim();
+  var price = document.getElementById('modal-price').textContent.trim();
+  var imgSrc = document.getElementById('modal-img').src.trim();
+  var description = document.getElementById('modal-description').textContent.trim();
 
+  var productLink = "https://karmic-design.vercel.app/neck.html"
 
-    var productLink = "https://karmic-design.vercel.app/neck.html"
-
-    if (!name || !pcode || !qty) {
-      alert("Please fill out all fields before sending the message.");
-      return;
-    }
-    var phonenumber = "918590210665";
-    var url = "https://wa.me/" + phonenumber + "?text=" +
-      encodeURIComponent("*Name:* " + name + "\n" +
-        "*Product Quantity:* " + qty + "\n" +
-        "*Product Code:* " + "Kd - " + pcode);
-
-    window.open(url, '_blank');
+  if (!name || !qty) {
+    alert("Please fill out all fields before sending the message.");
+    return;
   }
+  var phonenumber = "918590210665";
+  var message = `
+    *Customer Details:*\n
+    *Name:* ${name}\n
+    *Quantity:* ${qty}\n\n
+    *Product Details:*\n
+    *Title:* ${title}\n
+    *Product Code:* ${productCode}\n
+    *Price:* ${price}\n
+    *Description:* ${description}
+  `;
 
+  var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
+
+  window.open(url, '_blank');
+}
+function addCart(){
+  window.location.assign("./cart.html")
 }

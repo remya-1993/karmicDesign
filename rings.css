@@ -8,13 +8,6 @@ body {
     background-blend-mode: color-burn;
     background-size: cover;
     background-color: black;
-
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 #heading {
@@ -23,7 +16,7 @@ body {
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-margin-left: 40px;
+    margin-left: 40px;
 }
 
 #heading:hover {
@@ -37,21 +30,15 @@ a {
 }
 
 .header {
-   top: 0;
-   left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #f3f2f2fb;
-   
-}
-.head-icons{
-    display: flex;
-    gap: 15px;
-    cursor: pointer;
- }
 
+}
 .details {
     display: flex;
     align-items: center;
@@ -70,15 +57,55 @@ a {
     color: red;
 }
 
-.box1 {
+#fingerRings-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 15px 20px;
+    gap: 20px;
+    padding: 0 35px;
+}
+
+.fingerrings-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.fingerrings-item img {
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 26px;
+}
+
+.fingerrings-item img:hover {
+    transform: scale(1.03);
+}
+
+.fingerrings-item h3 {
+    font-size: 15px;
+}
+
+.fingerrings-item button {
+    padding: 6px;
+    border-radius: 8px;
+    border: 0;
+    margin-bottom: 6px;
+    color: rgb(86, 37, 37);
+    background-color: #ede0e0c1;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fingerrings-item button:hover {
+    transform: scale(1.06);
 }
 
 .box1 .fingerrings {
-    
     width: 250px;
     padding: 15px 0;
     margin: 15px 0;
@@ -93,12 +120,14 @@ a {
 .fingerrings img:hover {
     transform: scale(1.01);
 }
-h3{
+
+h3 {
     color: white;
     font-size: 45px;
     padding: 25px;
 }
-.buynow{
+
+.buynow {
     padding: 6px;
     border-radius: 8px;
     border: 0;
@@ -106,10 +135,10 @@ h3{
     color: rgb(86, 37, 37);
     background-color: #ede0e0c1;
     cursor: pointer;
-
 }
 
-h1, h2{
+h1,
+h2 {
     color: white;
     font-size: 15px;
 
@@ -119,13 +148,15 @@ h1, h2{
 
     margin-top: 10px;
 }
+
 body.modal-open {
     overflow: hidden;
 }
+
 .popup1 {
     display: none;
     background: #dcdbdb91;
-    background-position:fixed;
+    background-position: fixed;
     min-height: 100vh;
     width: 100%;
     position: fixed;
@@ -149,19 +180,20 @@ body.modal-open {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
 .popup2 {
     display: block;
     position: fixed;
     /* margin: 200px 380px 350px 380px; */
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     min-height: 100vh;
     background: #dcdbdbb3;
     /* background-color: rgba(11, 11, 11, 0.982);  */
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    z-index: 9999; 
+    z-index: 9999;
 
 }
 
@@ -171,66 +203,77 @@ body.modal-open {
     background-color: #171616;
     border-radius: 10px;
     z-index: 9999;
-    width: 380px; 
+    width: 380px;
     min-height: 50vh;
     display: flex;
     justify-content: center;
 
 }
-.customerData{
-    align-items:center;
+
+.customerData {
+    align-items: center;
 }
-.customerData input{
+
+.customerData input {
     width: 250px;
     height: 25px;
     border-radius: 5px;
     border: 0;
     padding: 6px;
     margin-top: 20px;
- 
+
 }
-.customerData label{
+
+.customerData label {
     color: white;
 }
-.customerData button{
+
+.customerData button {
     width: 265px;
-    height: 35px; 
+    height: 35px;
     padding: 6px;
     margin-top: 20px;
     cursor: pointer;
     background-color: rgb(71, 235, 71);
     border-radius: 5px;
 }
-.close1{
+
+.close1 {
     margin: 0;
     cursor: pointer;
 }
-.img{
+
+.img {
     margin-top: 30px;
     margin-left: 70px;
     cursor: pointer;
 }
-.img_details{
+
+.img_details {
     margin-top: 25px;
 }
-.img_details h1{
+
+.img_details h1 {
     color: white;
     font-size: 20px;
     padding: 10px;
 }
-.img_details h5{
+
+.img_details h5 {
     color: white;
     font-size: 15px;
     padding: 10px;
 }
-.img_details p{
+
+.img_details p {
     color: white;
     font-size: 15px;
     font-family: "Roboto", serif;
     font-weight: 100;
     padding: 15px;
 }
-.img_details button{
+
+.img_details button {
     padding: 8px 10px;
     font-size: 15px;
     width: 80%;
@@ -241,7 +284,17 @@ body.modal-open {
     background-color: #ede0e0c1;
     cursor: pointer;
 }
-.close{
+
+.img_details button:hover {
+    transform: scale(1.05);
+}
+
+.img_details .cart {
+    background-color: white;
+    color: black;
+}
+
+.close {
     margin-top: 20px;
     margin-right: 30px;
     cursor: pointer;
@@ -252,6 +305,7 @@ body.modal-open {
     border-radius: 5px;
     padding: 10px 15px;
     min-height: 100px;
+    margin-top: 20px;
 }
 
 .footer h4 {

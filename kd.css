@@ -9,9 +9,7 @@ body {
     background-blend-mode: color-burn;
     background-size: cover;
     background-color: rgb(7, 7, 7);
-
-    /* background-image: url(https://img.freepik.com/free-photo/top-view-engagement-rings-with-copy-space_23-2148483464.jpg); */
-}
+  }
 
 .container {
     max-width: 100%;

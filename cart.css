@@ -1,0 +1,80 @@
+* {
+    margin: 0PX;
+    padding: 0PX;
+}
+
+body {
+    background-color: rgb(202, 188, 188);
+}
+
+#heading {
+    color: rgb(86, 37, 37);
+    font-size: 2.5rem;
+    font-family: "Baskervville SC", serif;
+    font-weight: 650;
+    font-style: normal;
+    margin-left: 40px;
+
+}
+
+#heading:hover {
+    transform: scale(1.03);
+}
+
+a {
+    font-family: "Baskervville SC", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f2f2fb;
+}
+.details {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.details a {
+    color: #1d0a0a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.details a:hover {
+    color: red;
+}
+.container {
+    max-width: 100%;
+    padding: 25px 45px;
+}
+.cart-item{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.cart-item button{
+    width: 30px;
+}
+.cart-item img{
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.cartBtn{
+    margin-left: 100px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+   cursor: pointer;
+    background-color: rgb(103, 172, 103);
+    
+}
