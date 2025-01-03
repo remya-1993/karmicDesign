@@ -3,7 +3,7 @@ const necklaces = [
   {
     title: "Single Line Neckpiece",
     productCode: "Kd-01",
-    price: "Rs. 150.00",
+    price: "Rs. 150",
     imgSrc: "./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg",
     description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -11,7 +11,7 @@ const necklaces = [
   {
     title: "Beaded Neckpiece",
     productCode: "Kd-02",
-    price: "Rs. 170.00",
+    price: "Rs. 170",
     imgSrc: "./img/WhatsApp Image 2024-08-17 at 7.42.58 PM (1).jpeg",
     description: "Made with high-quality beads. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'> Know More</button>",
@@ -19,7 +19,7 @@ const necklaces = [
   {
     title: "Green Stone Neckpiece",
     productCode: "Kd-03",
-    price: "Rs. 190.00",
+    price: "Rs. 190",
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.29.36 PM.jpeg",
     description: "Made with high-quality beads. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -27,7 +27,7 @@ const necklaces = [
   {
     title: "White Beaded Neckpiece",
     productCode: "Kd-04",
-    price: "Rs. 145.00",
+    price: "Rs. 145",
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.50 PM.jpeg",
     description: "Made with high-quality white and golden coloured beads. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -35,7 +35,7 @@ const necklaces = [
   {
     title: "Single Beaded Chain",
     productCode: "Kd-05",
-    price: "Rs. 100.00",
+    price: "Rs. 100",
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.14.39 PM.jpeg",
     description: "Made with coloured stones and beads. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -43,7 +43,7 @@ const necklaces = [
   {
     title: "Traditional Neckpiece",
     productCode: "Kd-06",
-    price: "Rs. 210.00",
+    price: "Rs. 210",
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.08.38 PM.jpeg",
     description: "Made with white and pink coloured beads with golden chain. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -59,7 +59,7 @@ const necklaces = [
   {
     title: "Long Golden Chain",
     productCode: "Kd-08",
-    price: "Rs. 220.00",
+    price: "Rs. 220",
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.11.23 PM.jpeg",
     description: "Made with golden metals with big matching locket. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -67,7 +67,7 @@ const necklaces = [
   {
     title: "Traditional Neckpiece",
     productCode: "Kd-09",
-    price: "Rs. 185.00",
+    price: "Rs. 185",
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 11.31.36 PM.jpeg",
     description: "Made with white and green stones in golden chain. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -75,7 +75,7 @@ const necklaces = [
   {
     title: "Traditional Manga Mala",
     productCode: "Kd-10",
-    price: "Rs. 190.00",
+    price: "Rs. 190",
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.15.19 PM.jpeg",
     description: "Traditional palakka mala made with green coloured stones with earrings. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -83,7 +83,7 @@ const necklaces = [
   {
     title: "White Pearl Neckpiece",
     productCode: "Kd-11",
-    price: "Rs. 200.00",
+    price: "Rs. 200",
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.49 PM.jpeg",
     description: "Traditional Neckpiece chain made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -91,7 +91,7 @@ const necklaces = [
   {
     title: "Fabric Long Chain",
     productCode: "Kd-12",
-    price: "Rs. 170.00",
+    price: "Rs. 170",
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.19.18 PM.jpeg",
     description: "Made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -99,7 +99,7 @@ const necklaces = [
 ];
 
 
-function renderNecklaces() {
+function necklacePage() {
   let necklacesHTML = '';
 
   for (let i = 0; i < necklaces.length; i++) {
@@ -125,7 +125,7 @@ function renderNecklaces() {
   document.getElementById("necklace-container").innerHTML = necklacesHTML;
 
 }
-renderNecklaces();
+necklacePage();
 
 function showModal(title, productCode, price, imgSrc, description) {
 
@@ -170,7 +170,6 @@ function whatsapp() {
 
   var name = document.querySelector('.cusName').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
-  // var pcode = document.querySelector('.proPc').value.trim();
 
   var title = document.getElementById('modal-title').textContent.trim();
   var productCode = document.getElementById('modal-code').textContent.trim();
@@ -207,29 +206,6 @@ function addCart(){
   window.location.assign("./cart.html")
 }
 
-// function addCart() {
-//   const title = document.getElementById('modal-title').innerText;
-//   const productCode = document.getElementById('modal-code').innerText;
-//   const price = document.getElementById('modal-price').innerText;
-//   const image = document.getElementById('modal-img').src;
-//   const description = document.getElementById('modal-description').innerText;
-
-//   // Create an object with item details
-//   const itemDetails = {
-//     title: title,
-//     productCode: productCode,
-//     price: price,
-//     image: image,
-//     description: description
-//   };
-
-//   // Store it in localStorage
-//   let cart = JSON.parse(localStorage.getItem('cart')) || []; // Get existing cart or initialize a new one
-//   cart.push(itemDetails); // Add the new item to the cart
-//   localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart back to localStorage
-
-//   // alert("Item added to cart!");
-// }
 
 function addCart() {
   const title = document.getElementById('modal-title').innerText;

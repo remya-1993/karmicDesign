@@ -37,8 +37,6 @@ window.onload = function () {
         cartContainer.innerHTML += itemHTML;
     });
 };
-
-// Function to update item quantity
 function updateQuantity(index, change) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -62,7 +60,7 @@ function cartWhatsapp() {
         return;
     }
 
-    // Format cart details for WhatsApp message
+    var phonenumber = "918590210665";
     let message = "Cart Items:\n\n";
     cartItems.forEach((item, index) => {
         const itemPrice = parseFloat(item.price); 
@@ -76,9 +74,7 @@ function cartWhatsapp() {
         message += `   Total: Rs. ${itemTotal}\n\n`;
     });
 
-    // WhatsApp API URL
-    const whatsappURL = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
     
-    // Open WhatsApp link in a new tab
-    window.open(whatsappURL, "_blank");
+    window.open(url, "_blank");
 }

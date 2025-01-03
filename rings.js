@@ -58,7 +58,7 @@ const fingerRings = [
 ];
 
 
-function renderRings() {
+function ringsPage() {
   let fingerRingsHTML = '';
 
   for (let i = 0; i < fingerRings.length; i++) {
@@ -82,7 +82,7 @@ function renderRings() {
   document.getElementById("fingerRings-container").innerHTML = fingerRingsHTML;
 }
 
-renderRings();
+ringsPage();
 
 function showModal(title, productCode, price, imgSrc, description) {
 
@@ -152,4 +152,36 @@ function whatsapp() {
 }
 function addCart(){
   window.location.assign("./cart.html")
+}
+function addCart() {
+  const title = document.getElementById('modal-title').innerText;
+  const productCode = document.getElementById('modal-code').innerText;
+  const price = document.getElementById('modal-price').innerText;
+  const image = document.getElementById('modal-img').src;
+  const description = document.getElementById('modal-description').innerText;
+
+  const itemDetails = {
+    title: title,
+    productCode: productCode,
+    price: price,
+    image: image,
+    description: description,
+    quantity: 1
+  };
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  const existingItemIndex = cart.findIndex(item => item.productCode === productCode);
+
+  if (existingItemIndex > 0) {
+   
+    cart[existingItemIndex].quantity += 1;
+  } else {
+    
+    cart.push(itemDetails);
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  alert("Item added to cart!");
 }
