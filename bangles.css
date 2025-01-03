@@ -45,6 +45,9 @@ a {
     gap: 15px;
     cursor: pointer;
 }
+.details img{
+    cursor: pointer;
+}
 
 .details {
     display: flex;
@@ -160,9 +163,7 @@ h1:hover {
 .bangles img:hover {
     transform: scale(1.02);
 }
-body.modal-open {
-    overflow: hidden;
-}
+
 .popup1 {
     display: none;
     background: #dcdbdb91;

@@ -215,3 +215,7 @@ function addCart() {
 
   alert("Item added to cart!");
 }
+
+function cart(){
+  window.location.assign("cart.html")
+}

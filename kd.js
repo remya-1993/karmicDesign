@@ -1,6 +1,6 @@
-function toggleMenu() {
-  var x = document.getElementById("myTopnav");
-  x.classList.toggle("responsive");
+function myFunction() {
+  const menu = document.getElementById("myTopnav");
+  menu.classList.toggle("show");
 }
 
 function more(){
@@ -15,4 +15,7 @@ function more2(){
 }
 function more3(){
   window.location.assign("rings.html")
+}
+function cart(){
+  window.location.assign("cart.html")
 }

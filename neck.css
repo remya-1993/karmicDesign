@@ -46,6 +46,9 @@ a {
     background-color: #f3f2f2fb;
 
 }
+.details img{
+    cursor: pointer;
+}
 
 .details {
     display: flex;
@@ -124,10 +127,6 @@ h2 {
     font-weight: 100;
     font-style: normal;
     margin-top: 10px;
-}
-
-body.modal-open {
-    overflow: hidden;
 }
 
 .popup1 {

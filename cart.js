@@ -67,6 +67,7 @@ function cartWhatsapp() {
         const itemQuantity = parseInt(item.quantity, 10);
         const itemTotal = itemPrice * itemQuantity;
 
+        console.log(itemTotal);
         message += `${index + 1}. ${item.title}\n`;
         message += `   Product Code: ${item.productCode}\n`;
         message += `   Price: Rs. ${item.price}\n`;
@@ -77,4 +78,9 @@ function cartWhatsapp() {
     var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
     
     window.open(url, "_blank");
+}
+
+
+function cart(){
+    window.location.assign("./cart.html")
 }

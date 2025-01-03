@@ -51,7 +51,7 @@ const necklaces = [
   {
     title: "Multi Colour Neckpiece",
     productCode: "Kd-07",
-    price: "Rs. 225.00",
+    price: "Rs. 225",
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.25.15 PM.jpeg",
     description: "Made with golden coloured metals along with matching earrings. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -238,4 +238,8 @@ function addCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 
   alert("Item added to cart!");
+}
+
+function cart(){
+  window.location.assign("cart.html")
 }

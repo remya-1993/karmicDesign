@@ -41,7 +41,9 @@ a {
     align-items: center;
     gap: 25px;
 }
-
+.details img{
+    cursor: pointer;
+}
 .details a {
     color: #1d0a0a;
     font-weight: bold;

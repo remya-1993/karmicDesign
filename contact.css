@@ -36,6 +36,9 @@ a {
     background-color: #f3f2f2ed;
 
 }
+.details img{
+    cursor: pointer;
+}
 
 .details {
     display: flex;
