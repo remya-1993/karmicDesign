@@ -179,10 +179,6 @@ function whatsapp() {
     alert("Please fill out all fields before sending the message.");
     return;
   }
-  // if (isNaN(phone) || phone.length < 10 || phone.length > 10) {
-  //   alert("Please enter a valid 10-digit phone number.");
-  //   return;
-  // }
 
   var phonenumber = "918590210665";
   var url = "https://wa.me/" + phonenumber + "?text=" +
