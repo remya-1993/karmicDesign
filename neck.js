@@ -103,8 +103,8 @@ function renderNecklaces() {
   let necklacesHTML = '';
 
   for (let i = 0; i < necklaces.length; i++) {
-   
-   
+
+
     necklacesHTML += `
       <div class="necklace-item">
         <img src="${necklaces[i].imgSrc}" alt="${necklaces[i].title}" width="230px" />
@@ -121,9 +121,9 @@ function renderNecklaces() {
     `;
     console.log(necklaces[i].title);
   }
-  
+
   document.getElementById("necklace-container").innerHTML = necklacesHTML;
-  
+
 }
 renderNecklaces();
 
@@ -170,21 +170,45 @@ function whatsapp() {
 
   var name = document.querySelector('.cusName').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
-  var pcode = document.querySelector('.proPc').value.trim();
+  // var pcode = document.querySelector('.proPc').value.trim();
+
+  var title = document.getElementById('modal-title').textContent.trim();
+  var price = document.getElementById('modal-price').textContent.trim();
+  var imgSrc = document.getElementById('modal-img').src.trim();
+  var description = document.getElementById('modal-description').textContent.trim();
+
 
 
   var productLink = "https://karmic-design.vercel.app/neck.html"
 
-  if (!name || !pcode || !qty) {
+  if (!name || !qty) {
     alert("Please fill out all fields before sending the message.");
     return;
   }
-
   var phonenumber = "918590210665";
-  var url = "https://wa.me/" + phonenumber + "?text=" +
-    encodeURIComponent("*Name:* " + name + "\n" +
-      "*Product Quantity:* " + qty + "\n" +
-      "*Product Code:* " + "Kd - " + pcode);
+  var message = `
+  *Customer Details:*\n
+  *Name:* ${name}\n
+  *Quantity:* ${qty}\n\n
+  *Product Details:*\n
+  *Title:* ${title}\n
+  *Price:* ${price}\n
+  *Description:* ${description}\n
+  *Product Link:* ${productLink}\n\n
+  *Image URL:* ${imgSrc}
+`;
+
+  var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
 
   window.open(url, '_blank');
 }
+
+
+
+  // var url = "https://wa.me/" + phonenumber + "?text=" +
+  //   encodeURIComponent("*Name:* " + name + "\n" +
+  //     "*Product Quantity:* " + qty + "\n" +
+  //     "*Product Code:* " + "Kd - " + pcode);
+
+  // window.open(url, '_blank');
+
