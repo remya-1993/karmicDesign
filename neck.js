@@ -114,7 +114,7 @@ function renderNecklaces() {
         <p>Description: ${necklaces[i].description}</p>
         <button 
           class='buy-btn' 
-          onclick='showModal("${necklaces[i].title}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")'>
+          onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")'>
           Know More
         </button>
       </div>
@@ -127,9 +127,10 @@ function renderNecklaces() {
 }
 renderNecklaces();
 
-function showModal(title, price, imgSrc, description) {
+function showModal(title, productCode, price, imgSrc, description) {
 
   document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-code').textContent = productCode;
   document.getElementById('modal-price').textContent = price;
   document.getElementById('modal-img').src = imgSrc;
   document.getElementById('modal-description').textContent = description;
@@ -148,9 +149,9 @@ function buynow1() {
 }
 
 
-function showModal1(cusName, cusNumber, quantity) {
+function showModal1(cusName, quantity) {
   document.getElementById('cusName').value = cusName;
-  document.getElementById('cusNumber').value = cusNumber;
+  // document.getElementById('cusNumber').value = cusNumber;
   document.getElementById('quantity').value = quantity;
 
   document.getElementById('popup1').style.display = 'none';
@@ -173,6 +174,7 @@ function whatsapp() {
   // var pcode = document.querySelector('.proPc').value.trim();
 
   var title = document.getElementById('modal-title').textContent.trim();
+  var productCode = document.getElementById('modal-code').textContent.trim();
   var price = document.getElementById('modal-price').textContent.trim();
   var imgSrc = document.getElementById('modal-img').src.trim();
   var description = document.getElementById('modal-description').textContent.trim();
@@ -192,6 +194,7 @@ function whatsapp() {
   *Quantity:* ${qty}\n\n
   *Product Details:*\n
   *Title:* ${title}\n
+  *Product Code:* ${productCode}\n
   *Price:* ${price}\n
   *Description:* ${description}
 `;

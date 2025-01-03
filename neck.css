@@ -74,24 +74,6 @@ a {
 .details a:hover {
     color: red;
 }
-
-/* .box1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 15px 20px;
-} */
-
-/* #necklace-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 15px 20px;
-} */
-
-
-
-
 #necklace-container {
     display: flex;
     flex-wrap: wrap;
@@ -129,8 +111,8 @@ a {
     align-items: center;
     cursor: pointer;
 }
-.necklace-item button{
-    transform: scale(1.1);
+.necklace-item button:hover{
+    transform: scale(1.06);
 }
 
 
@@ -156,19 +138,6 @@ h3 {
     font-size: 45px;
     padding: 25px;
 }
-.buynow{
-    padding: 6px;
-    border-radius: 8px;
-    border: 0;
-    margin: 6px;
-    color: rgb(86, 37, 37);
-    background-color: #ede0e0c1;
-    cursor: pointer;
-}
-.buynow:hover{
-    transform: scale(1.1);
-}
-
 h1,
 h2 {
     color: white;
@@ -200,7 +169,7 @@ body.modal-open {
     display: flex;
     margin: 100px 150px 150px 150px;
     gap: 60px;
-    min-height: 70vh;
+    min-height: 65vh;
     width: 70%;
     border-radius: 5px;
     background-color: #171616;
@@ -211,13 +180,11 @@ body.modal-open {
 .popup2 {
     display: block;
     position: fixed;
-    /* margin: 200px 380px 350px 380px; */
     top: 0;
     left: 0;
     width: 100%; 
     min-height: 100vh;
     background: #dcdbdbb3;
-    /* background-color: rgba(11, 11, 11, 0.982);  */
     justify-content: center; 
     align-items: center;
     z-index: 9999; 
@@ -225,13 +192,12 @@ body.modal-open {
 }
 
 .popup-wrapper2 {
-    /* background-color: #fff;  */
     padding: 20px;
     background-color: #171616;
     border-radius: 10px;
     z-index: 9999;
-    width: 380px; 
-    min-height: 50vh;
+    width: 300px; 
+    min-height: 30vh;
     display: flex;
     justify-content: center;
 
@@ -241,6 +207,7 @@ body.modal-open {
 }
 .customerData label{
     color: white;
+    margin-top: 20px;
 }
 .customerData input{
     width: 250px;
@@ -260,7 +227,7 @@ body.modal-open {
     border-radius: 5px;
 }
 .close1{
-    margin: 0;
+   
     cursor: pointer;
 }
 .popup-wrapper img{
@@ -298,6 +265,13 @@ body.modal-open {
     color: rgb(86, 37, 37);
     background-color: #ede0e0c1;
     cursor: pointer;
+}
+.img_details button:hover{
+    transform: scale(1.05);
+}
+.img_details .cart{
+    background-color: white;
+    color: black;
 }
 .close{
     margin-top: 20px;
