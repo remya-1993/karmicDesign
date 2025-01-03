@@ -17,7 +17,7 @@ const bangles = [
     name: "Anti Tarnish Bangles",
     productCode: "Kd-103",
     price: 100,
-    image: "./img/bang4.jpeg",
+    image: "./img/BANG4.jpeg",
     description: "Made up with beads and stones."
   },
   {
@@ -31,14 +31,14 @@ const bangles = [
     name: "Anti Tarnish Bangles",
     productCode: "Kd-105",
     price: 100,
-    image: "./img/bang6.jpeg",
+    image: "./img/BANG6.jpeg",
     description: "Made up with beads and stones."
   },
   {
     name: "Anti Tarnish Bangles",
     productCode: "Kd-106",
     price: 110,
-    image: "./img/bang7.jpeg",
+    image: "./img/BANG7.jpeg",
     description: "Made up with beads and stones."
   },
   {
