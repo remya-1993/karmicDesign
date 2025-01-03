@@ -75,12 +75,64 @@ a {
     color: red;
 }
 
-.box1 {
+/* .box1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 15px 20px;
+} */
+
+/* #necklace-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+} */
+
+
+
+
+#necklace-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+   padding: 0 25px;
+  }
+  
+  .necklace-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .necklace-item img {
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+  }
+  .necklace-item img:hover {
+    transform: scale(1.03);
 }
+  .necklace-item h3{
+    font-size: 15px;
+  }
+.necklace-item button{
+    padding: 6px;
+    border-radius: 8px;
+    border: 0;
+    margin-bottom: 6px;
+    color: rgb(86, 37, 37);
+    background-color: #ede0e0c1;
+    align-items: center;
+    cursor: pointer;
+}
+.necklace-item button{
+    transform: scale(1.1);
+}
+
 
 .box1 .necklaces {
 
@@ -211,7 +263,7 @@ body.modal-open {
     margin: 0;
     cursor: pointer;
 }
-.img{
+.popup-wrapper img{
     margin-top: 30px;
     margin-left: 70px;
     cursor: pointer;
@@ -257,6 +309,7 @@ body.modal-open {
     border-radius: 5px;
     padding: 10px 15px;
     min-height: 100px;
+    margin-top: 20px;
 }
 
 .footer h4 {
@@ -287,10 +340,23 @@ body.modal-open {
     margin-right: 20px;
 }
 
+
+
 @media only screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
 
     .header {
+        max-width: 100%;
         width: 100%;
+        padding: 20px;
         height: 50px;
     }
 
@@ -320,12 +386,26 @@ body.modal-open {
         display: block;
 
     }
-    .popup1{
+    .box1{
+        padding: 25px;
+    }
+    .necklaces img{
+        width: 350px;
+        height: 320px;
+    }
+    .necklaces h1, h2, button{
+        font-size: 22px;
+       align-items: center;
+       
+    }
+   
+    
+    /* .popup1{
         max-width: 100%;
     }
     .popup-wrapper img{
        width: 100%;
-    }
+    } */
 
 
 

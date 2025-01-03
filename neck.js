@@ -1,7 +1,143 @@
-function toggleMenu() {
-  var x = document.getElementById("myTopnav");
-  x.classList.toggle("responsive");
+
+const necklaces = [
+  {
+    title: "Single Line Neckpiece",
+    productCode: "Kd-01",
+    price: "Rs. 150.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg",
+    description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Beaded Neckpiece",
+    productCode: "Kd-02",
+    price: "Rs. 170.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-17 at 7.42.58 PM (1).jpeg",
+    description: "Made with high-quality beads. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'> Know More</button>",
+  },
+  {
+    title: "Green Stone Neckpiece",
+    productCode: "Kd-03",
+    price: "Rs. 190.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.29.36 PM.jpeg",
+    description: "Made with high-quality beads. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "White Beaded Neckpiece",
+    productCode: "Kd-04",
+    price: "Rs. 145.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.50 PM.jpeg",
+    description: "Made with high-quality white and golden coloured beads. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Single Beaded Chain",
+    productCode: "Kd-05",
+    price: "Rs. 100.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.14.39 PM.jpeg",
+    description: "Made with coloured stones and beads. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Traditional Neckpiece",
+    productCode: "Kd-06",
+    price: "Rs. 210.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.08.38 PM.jpeg",
+    description: "Made with white and pink coloured beads with golden chain. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Multi Colour Neckpiece",
+    productCode: "Kd-07",
+    price: "Rs. 225.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.25.15 PM.jpeg",
+    description: "Made with golden coloured metals along with matching earrings. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Long Golden Chain",
+    productCode: "Kd-08",
+    price: "Rs. 220.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.11.23 PM.jpeg",
+    description: "Made with golden metals with big matching locket. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Traditional Neckpiece",
+    productCode: "Kd-09",
+    price: "Rs. 185.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-30 at 11.31.36 PM.jpeg",
+    description: "Made with white and green stones in golden chain. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Traditional Manga Mala",
+    productCode: "Kd-10",
+    price: "Rs. 190.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.15.19 PM.jpeg",
+    description: "Traditional palakka mala made with green coloured stones with earrings. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "White Pearl Neckpiece",
+    productCode: "Kd-11",
+    price: "Rs. 200.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.49 PM.jpeg",
+    description: "Traditional Neckpiece chain made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+  {
+    title: "Fabric Long Chain",
+    productCode: "Kd-12",
+    price: "Rs. 170.00",
+    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.19.18 PM.jpeg",
+    description: "Made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
+    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+  },
+];
+
+
+function renderNecklaces() {
+  let necklacesHTML = '';
+
+  for (let i = 0; i < necklaces.length; i++) {
+   
+   
+    necklacesHTML += `
+      <div class="necklace-item">
+        <img src="${necklaces[i].imgSrc}" alt="${necklaces[i].title}" width="230px" />
+        <h1>${necklaces[i].title}</h1>
+        <h2>Product Code: ${necklaces[i].productCode}</h2>
+        <h3>Price: ${necklaces[i].price}</h3>
+        <p>Description: ${necklaces[i].description}</p>
+        <button 
+          class='buy-btn' 
+          onclick='showModal("${necklaces[i].title}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")'>
+          Know More
+        </button>
+      </div>
+    `;
+    console.log(necklaces[i].title);
+  }
+  
+  document.getElementById("necklace-container").innerHTML = necklacesHTML;
+  
 }
+renderNecklaces();
+
+function showModal(title, price, imgSrc, description) {
+
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-price').textContent = price;
+  document.getElementById('modal-img').src = imgSrc;
+  document.getElementById('modal-description').textContent = description;
+
+  document.getElementById('popup1').style.display = 'block';
+  document.body.classList.add('modal-open');
+}
+
 
 function imgdetails1() {
   window.location.assign("neckpieces.html")
@@ -11,20 +147,6 @@ function buynow1() {
   window.location.assign("necksub.html")
 }
 
-function showModal(title, price, imgSrc, description) {
-
-  document.getElementById('modal-title').textContent = title;
-  document.getElementById('modal-price').textContent = price;
-  document.getElementById('modal-img').src = imgSrc;
-  document.getElementById('modal-description').textContent = description;
-
-  document.getElementById('popup1').style.display = 'flex';
-  document.body.classList.add('modal-open');
-}
-
-function closeModal() {
-  document.getElementById('popup1').style.display = 'none';
-}
 
 function showModal1(cusName, cusNumber, quantity) {
   document.getElementById('cusName').value = cusName;
@@ -49,7 +171,7 @@ function whatsapp() {
   var name = document.querySelector('.cusName').value.trim();
   var qty = document.querySelector('.quantity').value.trim();
   var pcode = document.querySelector('.proPc').value.trim();
-  
+
 
   var productLink = "https://karmic-design.vercel.app/neck.html"
 
@@ -61,11 +183,12 @@ function whatsapp() {
   //   alert("Please enter a valid 10-digit phone number.");
   //   return;
   // }
+
   var phonenumber = "918590210665";
   var url = "https://wa.me/" + phonenumber + "?text=" +
     encodeURIComponent("*Name:* " + name + "\n" +
-      "*Product Quantity:* "  + qty + "\n" +
+      "*Product Quantity:* " + qty + "\n" +
       "*Product Code:* " + "Kd - " + pcode);
-     
+
   window.open(url, '_blank');
 }

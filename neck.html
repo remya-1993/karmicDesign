@@ -40,7 +40,6 @@
     </div>
 
 
-    <div class="container">
 
         <div class="mainHead">
             <h3>Neck Pieces</h3>
@@ -48,14 +47,59 @@
 
         <div class="box1">
 
-            <div class="necklaces">
+            <div id="necklace-container"></div>
 
-                <img src="./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg" width="230px"
+            <div class="popup1" id="popup1" style="display: none;">
+                <div class="popup-wrapper">
+                    <div class="img">
+                        <img id="modal-img" src="" width="300px" alt="Necklace Image">
+                    </div>
+                    <div class="img_details">
+                        <h1 id="modal-title"></h1>
+                        <h5 id="modal-price"></h5>
+                        <button class="buyNow" onclick="showPopup2()">Order on WhatsApp</button>
+                        <p>Description:</p>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div class="close" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="popup2" id="popup2" style="display: none;">
+                <div class="popup-wrapper2">
+                    <div class="customerData">
+                        <label for=""> Your Name: </label>
+                        <br>
+                        <input class="cusName" id="cusName" type="text">
+                        <br>
+                        <label for="">Product Quantity: </label>
+                        <br>
+                        <input class="quantity" id="quantity" type="number" maxlength="2">
+                        <br>
+                        <label for="">Product PC: </label>
+                        <br>
+                        <input class="proPc" id="proPc" type="text">
+                        <br>
+                        <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
+                    </div>
+                    <div class="close1" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="necklaces">
+
+                <img id="img1" src="./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg" width="230px"
                     onclick="showModal('Single Line Neckpiece', 'Rs. 150.00', './img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg', 'Made up of stones. it is a long chain suitable for sarees. Green and white color stones with long golden chain.')">
                 <br>
-                <h1>Single Line Neckpiece</h1>
-                <h1>PC : Kd-01</h1>
-                <h2>Rs. 150.00</h2>
+                <h1 id="head1" >Single Line Neckpiece</h1>
+                <h1 id="head2" >PC : Kd-01</h1>
+                <h2 id="head3" >Rs. 150.00</h2>
 
                 <button class="buynow"
                     onclick="showModal('Single Line Neckpiece', 'Rs. 150.00', './img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg', 'Made up of stones. It is a long chain suitable for sarees. Green and white color stones with long golden chain.')">
@@ -242,44 +286,44 @@
 
             </div>
 
-        </div>
+        </div> -->
 
-    </div>
 
-    <div class="footer">
-        <div class="wrapper">
-            <h4><u>Contact Us</u></h4>
-            <br>
-            <div class="data">
-                <div>
-                    <a href="">ADDRESS</a>
-                    <br>
-                    <br>
 
-                    <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
-                </div>
-                <div>
-                    <a href="">CALL US</a>
-                    <br>
-                    <br>
-                    <div class="number">
-                        <p>+91 8590210665 </p>
+        <div class="footer">
+            <div class="wrapper">
+                <h4><u>Contact Us</u></h4>
+                <br>
+                <div class="data">
+                    <div>
+                        <a href="">ADDRESS</a>
+                        <br>
+                        <br>
 
+                        <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
+                    </div>
+                    <div>
+                        <a href="">CALL US</a>
+                        <br>
+                        <br>
+                        <div class="number">
+                            <p>+91 8590210665 </p>
+
+                        </div>
+                    </div>
+                    <div>
+                        <a href="">EMAIL US</a>
+                        <br>
+                        <br>
+                        <div class="mail">
+                            karmic24@gmail.com
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <a href="">EMAIL US</a>
-                    <br>
-                    <br>
-                    <div class="mail">
-                        karmic24@gmail.com
-                    </div>
-                </div>
+
             </div>
 
-        </div>
-
-        <script src="./neck.js"></script>
+            <script src="./neck.js"></script>
 </body>
 
 </html>
