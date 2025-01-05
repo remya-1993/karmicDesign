@@ -64,6 +64,12 @@ a {
     max-width: 100%;
     /* padding: 25px 45px; */
 }
+.box1 .cart-item {
+    width: 250px;
+    padding: 15px 0;
+    margin: 15px 0;
+    text-align: center;
+}
 .cart-item{
     /* margin-left: 100px; */
     width: 100%;
@@ -168,6 +174,10 @@ a {
         font-size: 20px;
         padding: 15px;
 
+    }
+    .box1 {
+        max-width: 100%;
+        padding: 20px;
     }
    
     .cart-item{
