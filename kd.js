@@ -1,6 +1,10 @@
 function myFunction() {
-  const menu = document.getElementById("myTopnav");
-  menu.classList.toggle("show");
+  var x = document.getElementById("myTopnav");
+  if (x.className === "details") {
+    x.className += " responsive";
+  } else {
+    x.className = "details";
+  }
 }
 
 function more(){
