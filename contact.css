@@ -7,13 +7,16 @@ body {
     background-color: rgb(52, 50, 50);
 }
 
+.container {
+    max-width: 100%;
+}
+
 #heading {
-    color: rgb(86, 37, 37);
+    color: black;
     font-size: 2.5rem;
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-    margin-left: 30px;
 }
 
 #heading:hover {
@@ -27,17 +30,21 @@ a {
 }
 
 .header {
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #f3f2f2ed;
+    background-color: white;
 
 }
-.details img{
+
+.details img {
     cursor: pointer;
+}
+
+.head {
+    display: flex;
+    align-items: center;
 }
 
 .details {
@@ -55,7 +62,7 @@ a {
 }
 
 .details a:hover {
-    color: red;
+    color: rgb(163, 52, 52);
 }
 
 .about {
@@ -73,7 +80,6 @@ a {
     margin-top: 10px;
     font-size: 1.2rem;
 }
-
 .describe p {
     color: white;
     text-align: center;
@@ -85,41 +91,62 @@ a {
 .describe h1 {
     color: white;
     font-size: 2rem;
-    margin-left: 490px;
-}
-.footer {
-    background-color: rgb(130, 110, 110);
-    border-radius: 5px;
-    padding: 10px 15px;
-    min-height: 100px;
+    text-align: center;
 }
 
-.footer h4 {
-    color: white;
-    font-size: 2rem;
-    margin-left: 40px;
+@media only screen and (max-width: 767px) {
+
+    .container {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .header {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+        height: 50px;
+    }
+    #heading {
+        font-size: 25px;
+    }
+
+    .head-icons {
+        margin-right: 15px;
+    }
+
+    .toggle {
+        margin-right: 10px;
+    }
+
+    .details {
+        display: none;
+        flex-direction: column;
+    }
+
+    .details .responsive {
+        display: flex;
+        text-align: right;
+    }
+
+    .icon {
+        display: block;
+
+    }
+    .about h2,p{
+        font-size: 45px;
+    }
+    .describe h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .describe p{
+        font-size: 25px;
+    }
+
+
+
 }
-
-.data {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 40px;
-}
-
-.data a {
-    text-decoration: none;
-    color: white;
-
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.mail {
-    margin-right: 20px;
-}
-
-

@@ -4,18 +4,19 @@
 }
 
 body {
-    /* background-image: url(https://t4.ftcdn.net/jpg/02/35/59/79/360_F_235597946_P8Wy0Vi1h9TRy9Kan6AXbp7hPeZh6vZM.jpg); */
     background: black;
+}
+.head{
+    display: flex;
+    align-items: center;
 }
 
 #heading {
-    color: rgb(86, 37, 37);
+    color: black;
     font-size: 2.5rem;
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-    margin-left: 40px;
-
 }
 
 #heading:hover {
@@ -27,15 +28,15 @@ a {
     font-weight: 200;
     font-style: normal;
 }
-
+.container {
+    max-width: 100%;
+}
 .header {
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #f3f2f2fb;
+    background-color: white;
 }
 .details {
     display: flex;
@@ -55,7 +56,7 @@ a {
 }
 
 .details a:hover {
-    color: red;
+    color:rgb(163, 52, 52);
 }
 
 h3 {
@@ -142,11 +143,9 @@ h1,
 h2 {
     color: white;
     font-size: 15px;
-
     font-family: "Roboto", serif;
     font-weight: 100;
     font-style: normal;
-
     margin-top: 10px;
 }
 
@@ -305,14 +304,14 @@ h2 {
 .footer h4 {
     color: white;
     font-size: 2rem;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .data a {
@@ -325,7 +324,101 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-
+/* 
 .mail {
     margin-right: 20px;
+} */
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .header {
+     max-width: 100%;
+     width: 100%;
+        padding: 20px;
+        height: 50px;
+    }
+
+    #heading {
+        font-size: 25px;
+    }
+
+    .head-icons {
+        margin-right: 15px;
+    }
+
+    .toggle {
+        margin-right: 10px;
+    }
+
+    .details {
+        display: none;
+        flex-direction: column;
+    }
+
+    .details .responsive {
+        display: flex;
+        text-align: right;
+    }
+
+    .icon {
+        display: block;
+
+    }
+
+    .box1 {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .earrings-item{
+        align-items: center;
+       max-width: 100%;
+       width: 350px;
+    }
+    .earrings-item img{
+        align-items: center;
+        width: 300px
+    }
+    .earrings-item h3, h1, h2{
+        font-size: 25px;
+    }
+
+    .earrings h1,
+    h2,
+    button {
+        font-size: 22px;
+        align-items: center;
+
+    }
+
+
+    .popup1 {
+        width: 100%;
+    }
+
+    .popup-wrapper img {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+   .wrapper h4{
+    text-align: center;
+   }
+
 }

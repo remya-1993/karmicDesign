@@ -11,12 +11,18 @@ body {
     background-color: rgb(7, 7, 7);
 }
 
+.head {
+    display: flex;
+    align-items: center;
+}
+
 .container {
     max-width: 100%;
+
 }
 
 #heading {
-    color: rgb(86, 37, 37);
+    color: black;
     font-size: 2.5rem;
     font-family: "Baskervville SC", serif;
     font-weight: 650;
@@ -42,7 +48,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ede0e0c1;
+    background-color: white;
 }
 
 .details img {
@@ -65,7 +71,7 @@ a {
 }
 
 .details a:hover {
-    color: red;
+    color: rgb(163, 52, 52);
 }
 
 .topnav .icon {
@@ -74,20 +80,18 @@ a {
 
 .content1 {
     border: 1px solid black;
-    height: 90%;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 70px;
     background: linear-gradient(140deg, #393535de, #f4afb1);
 }
 
 .content1 img {
-
-    bottom: 50px;
-    padding: 30px 50px;
-    /* margin-left: 40px; */
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: 25px;
 }
 
 .para1 p {
@@ -98,7 +102,6 @@ a {
     border-radius: 10px;
     font-size: 40px;
     padding: 0px;
-    /* margin-left: 50px; */
     align-items: center;
 }
 
@@ -115,25 +118,6 @@ a {
     /* margin-left: 50px; */
 
 }
-
-.shadow-button {
-    background-color: #7d6c6f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-
-.shadow-button:hover {
-    background-color: #e197a5;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
 
 .box1 {
     background-color: rgb(245, 231, 231);
@@ -156,7 +140,7 @@ h2 {
 }
 
 .clts1 img {
-    width: 220px;
+    width: 200px;
     height: 210px;
     margin: 3px 0;
     border-radius: 8px;
@@ -240,19 +224,22 @@ h3 {
 @media only screen and (max-width: 767px) {
 
     .container {
-        max-width: 100%;
         width: 100%;
-        padding: 0 20px;
         align-items: center;
     }
 
-    *.details {
+    .details {
         display: flex;
         flex-direction: column;
     }
 
     #heading {
         font-size: 25px;
+    }
+
+    .header {
+        padding: 10px 5px;
+        width: 100%;
     }
 
     .head-icons {
@@ -280,22 +267,18 @@ h3 {
     }
 
     .content1 {
-        width: 500px;
+        padding: 5px;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+       
         flex-direction: column;
-        right: 0;
-        left: 0;
-
     }
 
     .para1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 550px;
+        max-width: 100%;
+       display: flex;
+       justify-content: center;
+      margin-bottom: 50px;
     }
 
     .para1 .btns {
@@ -304,7 +287,7 @@ h3 {
 
     .box1 {
         padding: 10px 5px;
-        width: 490px;
+        width: 100%;
     }
 
     .box1 h2 {
@@ -361,6 +344,7 @@ h3 {
     }
 
     .footer {
-        width: 473px;
+        padding: 10px 5px;
+        width: 100%;
     }
 }

@@ -6,15 +6,16 @@
 body {
     background-color: rgb(202, 188, 188);
 }
+.container {
+    max-width: 100%;
+}
 
 #heading {
-    color: rgb(86, 37, 37);
+    color: black;
     font-size: 2.5rem;
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-    margin-left: 40px;
-
 }
 
 #heading:hover {
@@ -26,15 +27,16 @@ a {
     font-weight: 200;
     font-style: normal;
 }
-
+.head{
+    display: flex;
+    align-items: center;
+}
 .header {
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #f3f2f2fb;
+    background-color: white;
 }
 .details {
     display: flex;
@@ -53,15 +55,19 @@ a {
 }
 
 .details a:hover {
-    color: red;
+    color: rgb(163, 52, 52);
 }
 .container {
     max-width: 100%;
-    padding: 25px 45px;
+    /* padding: 25px 45px; */
 }
 .cart-item{
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    width: 100%;
+    max-width: 100%;
     margin-top: 15px;
+    /* text-align: center; */
+    padding: 20px 25px;
 }
 .cart-item button{
     width: 30px;
@@ -72,11 +78,76 @@ a {
     border: 1px solid black;
 }
 .cartBtn{
-    margin-left: 100px;
+    /* margin-left: 100px; */
+  margin-left: 20px;
     width: 30%;
     padding: 10px;
     border-radius: 5px;
    cursor: pointer;
     background-color: rgb(103, 172, 103);
+
     
+}
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .header {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+        height: 50px;
+    }
+    #heading {
+        font-size: 25px;
+    }
+
+    .head-icons {
+        margin-right: 15px;
+    }
+
+    .toggle {
+        margin-right: 10px;
+    }
+
+    .details {
+        display: none;
+        flex-direction: column;
+    }
+
+    .details .responsive {
+        display: flex;
+        text-align: right;
+    }
+
+    .icon {
+        display: block;
+
+    }
+    .cart-item{
+        width: 100%;
+        text-align: center;
+    }
+    .cart-item img{
+        width: 250px;
+       
+    }
+    .cart-item h2,p{
+        width: 100%;
+        font-size: 35px;
+    }
+    .cartBtn{
+        width: 100%;
+        padding: 15px;
+    }
+
+
+
 }

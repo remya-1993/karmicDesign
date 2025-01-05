@@ -24,113 +24,111 @@
     rel="stylesheet">
 
 <body>
-    <div class="header">
-        <div class="head">
 
-            <h1 id="heading">Karmic Designs</h1>
-        </div>
-        <div class="details">
-            <a href="./index.html">Home</a>
-            <a href="./neck.html">Neck Pieces</a>
-            <a href="./ear.html">Earrings</a>
-            <a href="./bangles.html">Bangles</a>
-            <a href="./rings.html">Finger Rings</a>
-            <a href="./contact.html"> Contact Us</a>
-            <img onclick="cart()" src="./img/shopping-cart.png" alt="" width="30px">
-        </div>
+    <div class="container">
 
-        <!-- <div class="head-icons">
-            <img src="./img/search-interface-symbol.png" alt="" width="25px">
-            <img src="./img/user.png" alt="" width="25px" >
-            <img src="./img/shopping-bag.png" alt="" width="25px">
-        </div> -->
-
-
-    </div>
-
-
-    <div class="mainHead">
-        <h3>Ear Rings</h3>
-    </div>
-
-    <div class="box1">
-
-        <div id="earring-container"></div>
-
-        <div class="popup1" id="popup1" style="display: none;">
-            <div class="popup-wrapper">
-                <div class="img">
-                <img id="modal-img" src="" width="300px" alt="Earrings Image">
-                </div>
-                <div class="img_details">
-                    <h1 id="modal-title"></h1>
-                    <h5 id="modal-code"></h5>
-                    <h5 id="modal-price"></h5>
-                    <button class="cart" onclick="addCart()">Add to cart</button>
-                    <button class="buyNow" onclick="showPopup2()">Order on WhatsApp</button>
-                    <p>Description:</p>
-                    <p id="modal-description"></p>
-                </div>
-                <div class="close" onclick="closeModal('popup1')">
-                    <img src="./img/close.png" width="30px">
-                </div>
+        <div class="header">
+            <div class="head">
+                <img src="./img/removebg-logo1.png" alt="" width=" 100px" height="75px">
+                <h1 id="heading">Karmic Designs</h1>
             </div>
-        </div>
-        <div class="popup2" id="popup2" style="display: none;">
-            <div class="popup-wrapper2">
-                <div class="customerData">
-                    <label for=""> Your Name: </label>
-                    <br>
-                    <input class="cusName" id="cusName" type="text">
-                    <br>
-                    <br>
-                    <label for="">Product Quantity: </label>
-                    <br>
-                    <input class="quantity" id="quantity" type="number" maxlength="2">
-                    <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
-                </div>
-                <div class="close1" onclick="closeModal('popup1')">
-                    <img src="./img/close.png" width="30px">
-                </div>
+            <div class="details">
+                <a href="./index.html">Home</a>
+                <a href="./neck.html">Neck Pieces</a>
+                <a href="./ear.html">Earrings</a>
+                <a href="./bangles.html">Bangles</a>
+                <a href="./rings.html">Finger Rings</a>
+                <a href="./contact.html"> Contact Us</a>
+                <img onclick="cart()" src="./img/shopping-cart.png" alt="" width="30px">
             </div>
         </div>
 
-    </div>
 
-    <div class="footer">
-        <div class="wrapper">
-            <h4><u>Contact Us</u></h4>
-            <br>
-            <div class="data">
-                <div>
-                    <a href="">ADDRESS</a>
-                    <br>
-                    <br>
+        <div class="mainHead">
+            <h3>Ear Rings</h3>
+        </div>
 
-                    <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
-                </div>
-                <div>
-                    <a href="">CALL US</a>
-                    <br>
-                    <br>
-                    <div class="number">
-                        <p>+91 8590210665 </p>
+        <div class="box1">
 
+            <div id="earring-container"></div>
+
+            <div class="popup1" id="popup1" style="display: none;">
+                <div class="popup-wrapper">
+                    <div class="img">
+                        <img id="modal-img" src="" width="300px" alt="Earrings Image">
+                    </div>
+                    <div class="img_details">
+                        <h1 id="modal-title"></h1>
+                        <h5 id="modal-code"></h5>
+                        <h5 id="modal-price"></h5>
+                        <button class="cart" onclick="addCart()">Add to cart</button>
+                        <button class="buyNow" onclick="showPopup2()">Order on WhatsApp</button>
+                        <p>Description:</p>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div class="close" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
                     </div>
                 </div>
-                <div>
-                    <a href="">EMAIL US</a>
-                    <br>
-                    <br>
-                    <div class="mail">
-                        karmic24@gmail.com
+            </div>
+            <div class="popup2" id="popup2" style="display: none;">
+                <div class="popup-wrapper2">
+                    <div class="customerData">
+                        <label for=""> Your Name: </label>
+                        <br>
+                        <input class="cusName" id="cusName" type="text">
+                        <br>
+                        <br>
+                        <label for="">Product Quantity: </label>
+                        <br>
+                        <input class="quantity" id="quantity" type="number" maxlength="2">
+                        <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
+                    </div>
+                    <div class="close1" onclick="closeModal('popup1')">
+                        <img src="./img/close.png" width="30px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <h4><u>Contact Us</u></h4>
+                <br>
+                <div class="data">
+                    <div>
+                        <a href="">ADDRESS</a>
+                        <br>
+                        <br>
+
+                        <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
+                    </div>
+                    <div>
+                        <a href="">CALL US</a>
+                        <br>
+                        <br>
+                        <div class="number">
+                            <p>+91 8590210665 </p>
+
+                        </div>
+                    </div>
+                    <div>
+                        <a href="">EMAIL US</a>
+                        <br>
+                        <br>
+                        <div class="mail">
+                            karmic24@gmail.com
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="./ear.js"></script>
+
     </div>
 
-    <script src="./ear.js"></script>
 
 </body>
 

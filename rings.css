@@ -11,12 +11,16 @@ body {
 }
 
 #heading {
-    color: rgb(86, 37, 37);
+    color: black;
     font-size: 2.5rem;
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-    margin-left: 40px;
+
+}
+.head{
+    display: flex;
+    align-items: center;
 }
 
 #heading:hover {
@@ -27,6 +31,9 @@ a {
     font-family: "Baskervville SC", serif;
     font-weight: 200;
     font-style: normal;
+}
+.container {
+    max-width: 100%;
 }
 
 .header {
@@ -56,7 +63,7 @@ a {
 }
 
 .details a:hover {
-    color: red;
+    color:rgb(163, 52, 52);
 }
 
 #fingerRings-container {
@@ -309,14 +316,14 @@ h2 {
 .footer h4 {
     color: white;
     font-size: 2rem;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .data a {
@@ -330,6 +337,93 @@ h2 {
     justify-content: space-between;
 }
 
-.mail {
-    margin-right: 20px;
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .header {
+     max-width: 100%;
+     width: 100%;
+        padding: 20px;
+        height: 50px;
+    }
+
+    #heading {
+        font-size: 25px;
+    }
+
+    .head-icons {
+        margin-right: 15px;
+    }
+
+    .toggle {
+        margin-right: 10px;
+    }
+
+    .details {
+        display: none;
+        flex-direction: column;
+    }
+
+    .details .responsive {
+        display: flex;
+        text-align: right;
+    }
+
+    .icon {
+        display: block;
+
+    }
+
+    .box1 {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .fingerrings-item{
+        align-items: center;
+       max-width: 100%;
+       width: 350px;
+    }
+    .fingerrings-item img{
+        align-items: center;
+        width: 300px
+    }
+    .fingerrings-item h3, h1, h2{
+        font-size: 25px;
+    }
+
+    .fingerrings h1,
+    h2,
+    button {
+        font-size: 22px;
+        align-items: center;
+    }
+    .popup1 {
+        width: 100%;
+    }
+
+    .popup-wrapper img {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+   .wrapper h4{
+    text-align: center;
+   }
+
 }
