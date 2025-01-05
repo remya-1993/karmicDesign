@@ -81,22 +81,24 @@ a {
 .content1 {
     border: 1px solid black;
     display: flex;
-    width: 100%;
+    max-width: 100%;
+   
   align-items: center;
+  text-align: center;
     background: linear-gradient(140deg, #393535de, #f4afb1);
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .content1 .img1 {
     padding: 15px 20px;
     margin-top: 50px;
     text-align: center;
-    margin-left: 25px;  
+    /* margin-left: 25px;   */
 }
 .content1 .img2 {
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
     margin-top: 50px;
-    /* margin-right: 50px; */
+    margin-right: 150px;
     /* box-shadow: 10px 10px 20px rgba(28, 28, 28, 0.5); */
  
 }
