@@ -244,9 +244,9 @@ h2 {
     cursor: pointer;
 }
 
-.img_details {
+/* .img_details {
     margin-top: 25px;
-}
+} */
 
 .img_details h1 {
     color: white;
@@ -453,7 +453,7 @@ h2 {
         
     }
     .popup-wrapper .close{
-        width: 100px;
+        width: 50px;
         position: absolute;
         top: 0;
         right: 0;
