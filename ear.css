@@ -242,6 +242,7 @@ h2 {
 .img {
     margin: 0 auto;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 /* .img_details {
@@ -444,7 +445,7 @@ h2 {
      flex-direction: column;
      flex-wrap: wrap;
      text-align: center;
-     margin-top: 45px;
+     /* margin-top: 45px; */
      position: relative;
     }
     .popup-wrapper img {

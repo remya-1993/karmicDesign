@@ -227,10 +227,8 @@ h2 {
 .img{
     margin: 0 auto;
     cursor: pointer;
-}
-/* .img_details {
     margin-top:25px;
-} */
+}
 
 .img_details h1 {
     color: white;
@@ -424,9 +422,7 @@ h2 {
         font-size: 10px;
     }
     .popup1 {
-        width: 100%;
-      
-       
+        width: 100%;   
     }
 
     .popup-wrapper {
@@ -436,12 +432,12 @@ h2 {
      flex-direction: column;
      flex-wrap: wrap;
      text-align: center;
-     margin-top: 45px;
+     /* margin-top: 15px; */
      position: relative;
     }
     .popup-wrapper img {
         width: 70%;
-     margin-top: 20px;
+     margin-top: 30px;
     }
     .popup-wrapper .close{
         width: 50px;
@@ -449,7 +445,7 @@ h2 {
         top: 0;
         right: 0;
     }
-
+   
 
     .footer {
         /* padding: 10px; */

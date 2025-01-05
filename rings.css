@@ -255,6 +255,7 @@ h2 {
 .img {
     margin: 0 auto;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 /* .img_details {
