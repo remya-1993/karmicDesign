@@ -72,7 +72,7 @@ function ringsPage() {
         <button 
           class='buy-btn' 
           onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")'>
-          Know More
+          Know More..
         </button>
       </div>
     `;

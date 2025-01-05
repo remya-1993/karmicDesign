@@ -115,7 +115,7 @@ function necklacePage() {
         <button 
           class='buy-btn' 
           onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")'>
-          Know More
+          Know More..
         </button>
       </div>
     `;

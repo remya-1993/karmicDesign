@@ -77,16 +77,18 @@ a {
 .details .icon {
     display: none;
 }
-
-.content1 {
-    border: 1px solid black;
-    display: flex;
-    max-width: 100%;
-   
-  align-items: center;
-  text-align: center;
+.main-wrapper {
     background: linear-gradient(140deg, #393535de, #f4afb1);
-    justify-content: center;
+}
+.content1 {
+    display: flex;
+    width: 100%;
+    max-width: 992px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .content1 .img1 {
@@ -95,22 +97,16 @@ a {
     text-align: center;
     /* margin-left: 25px;   */
 }
-.content1 .img2 {
-    /* padding: 10px 25px; */
-    margin-top: 50px;
-    margin-right: 150px;
-    /* box-shadow: 10px 10px 20px rgba(28, 28, 28, 0.5); */
- 
-}
+
 .para1 p {
     color: black;
     max-width: 80%;
-  margin-left: 25px;
+    /* margin-left: 25px; */
     border: 1px solid #ecbbbbc1;
     border-radius: 10px;
     font-size: 30px;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 25px auto;
     padding: 15px;
 }
 
@@ -132,11 +128,20 @@ a {
     background-color: rgb(245, 231, 231);
     padding: 16px 0;
 }
-
-h2 {
-    font-size: 2.5rem;
+.box1 {
+    font-size: 1.5rem;
     font-family: "Baskervville SC", serif;
+    text-align: center;
     font-weight: 400;
+    font-style: normal;
+    padding: 15px;
+}
+
+.end1 h2 {
+    font-size: 1.5rem;
+    font-family: "Baskervville SC", serif;
+    text-align: center;
+    /* font-weight: 400; */
     font-style: normal;
     padding: 15px 25px;
 }
@@ -199,6 +204,7 @@ h3 {
     font-family: "Stint Ultra Condensed", serif;
     font-weight: 400;
     font-style: normal;
+    padding: 5px;
 }
 
 .footer {
@@ -206,11 +212,13 @@ h3 {
     border-radius: 5px;
     padding: 15px;
     min-height: 100px;
+
 }
 
 .footer h4 {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 .data {
@@ -222,7 +230,7 @@ h3 {
 .data a {
     text-decoration: none;
     color: white;
-    font-size: 1rem ;
+    font-size: 15px;
 }
 
 .info {
@@ -236,9 +244,11 @@ h3 {
         width: 100%;
         align-items: center;
     }
+
     #heading {
         font-size: 25px;
     }
+
     .header {
         padding: 10px 5px;
         width: 100%;
@@ -258,6 +268,7 @@ h3 {
         display: block;
 
     }
+
     .details .menu {
         display: none;
     }
@@ -307,6 +318,7 @@ h3 {
         padding: 10px 5px;
         width: 100%;
     }
+
     .content1 {
         padding: 5px;
         width: 100%;

@@ -101,7 +101,7 @@ function earringsPage() {
         <button 
           class='buy-btn' 
           onclick='showModal("${earrings[i].title}", "${earrings[i].productCode}", "${earrings[i].price}", "${earrings[i].imgSrc}", "${earrings[i].description}")'>
-          Know More
+          Know More..
         </button>
       </div>
     `;

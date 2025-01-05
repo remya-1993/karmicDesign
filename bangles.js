@@ -92,7 +92,7 @@ function banglesPage() {
         <button 
           class='buy-btn' 
           onclick='showModal("${bangles[i].name}", "${bangles[i].productCode}", "${bangles[i].price}", "${bangles[i].image}", "${bangles[i].description}")'>
-          Know More
+          Know More..
         </button>
       </div>
     `;
