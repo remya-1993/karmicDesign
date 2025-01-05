@@ -244,17 +244,17 @@ h1:hover {
 }
 .img_details h1{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
 }
 .img_details h5{
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     padding: 10px;
 }
 .img_details p{
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     font-family: "Roboto", serif;
     font-weight: 100;
     padding: 15px;
@@ -392,7 +392,7 @@ h1:hover {
     .details.responsive a {
         display: block;
         color: #171616;
-        font-size: 20px;
+       
         padding: 15px;
 
     }
@@ -411,14 +411,12 @@ h1:hover {
         align-items: center;
         width: 300px
     }
-    .bangles-item h3, h1, h2{
-        font-size: 25px;
-    }
+   
 
     .bangles h1,
     h2,
     button {
-        font-size: 22px;
+       
         align-items: center;
     }
     .popup1 {
