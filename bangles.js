@@ -1,76 +1,76 @@
 const bangles = [
   {
-    name: "Anti Tarnish Bangles",
+    name: "Beads bangles",
     productCode: "Kd-101",
     price: 150,
     image: "./img/bang 1.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Golden stone work bangles",
     productCode: "Kd-102",
     price: 120,
     image: "./img/bang 3.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Thread bangles",
     productCode: "Kd-103",
     price: 100,
     image: "./img/BANG4.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-104",
     price: 170,
     image: "./img/BANG5.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-105",
     price: 100,
     image: "./img/BANG6.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-106",
     price: 110,
     image: "./img/BANG7.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-107",
     price: 110,
     image: "./img/BANG1.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Golden stone work bangles",
     productCode: "Kd-108",
     price: 110,
     image: "./img/BANG2.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-109",
     price: 110,
     image: "./img/BANG3.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-110",
     price: 110,
     image: "./img/Stone.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Anti Tarnish Bangles",
+    name: "Handmade stone work bangles",
     productCode: "Kd-111",
     price: 110,
     image: "./img/Stone2.jpeg",
