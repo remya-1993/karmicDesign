@@ -415,7 +415,8 @@ h2 {
 
     .necklace-item img {
         align-items: center;
-        width: 300px
+        margin: 0 auto;
+        width: 250px
     }
 
     .necklace-item h3,
@@ -465,8 +466,8 @@ h2 {
 
 
     .footer {
-        padding: 5px;
-        width: 100%;
+        /* padding: 1px;     */
+        max-width: 100%;
         
     }
 
@@ -474,8 +475,9 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
+        padding: 5px;
     }
 
     .wrapper h4 {
