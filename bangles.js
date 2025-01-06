@@ -88,7 +88,7 @@ function banglesPage() {
         <h1>${bangles[i].name}</h1>
         <h2>Product Code: ${bangles[i].productCode}</h2>
         <h3>Price: Rs. ${bangles[i].price}</h3>
-        <p>Description: ${bangles[i].description}</p>
+        <p> ${bangles[i].description}</p>
         <button 
           class='buy-btn' 
           onclick='showModal("${bangles[i].name}", "${bangles[i].productCode}", "${bangles[i].price}", "${bangles[i].image}", "${bangles[i].description}")'>

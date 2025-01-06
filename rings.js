@@ -4,56 +4,55 @@ const fingerRings = [
       productCode: "Kd-151",
       price: 120,
       image: "./img/ring1.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-152",
       price: 100,
       image: "./img/ring2.jpeg",
-      description: "it is a thin shaped finger ring."
-  },
+      description: "It is a thin shaped finger ring."
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-153",
       price: 170,
       image: "./img/ring3.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-154",
       price: 100,
       image: "./img/ring4.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-155",
       price: 110,
       image: "./img/ring5.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-156",
       price: 110,
       image: "./img/ring6.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-157",
       price: 110,
       image: "./img/ring7.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   },
   {
       name: "Anti Tarnish Rings",
       productCode: "Kd-158",
       price: 110,
       image: "./img/ring8.jpeg",
-      description: "it is a thin shaped finger ring."
+      description: "It is a thin shaped finger ring."
   }
 ];
 
@@ -68,7 +67,7 @@ function ringsPage() {
         <h1>${fingerRings[i].name}</h1>
         <h2>Product Code: ${fingerRings[i].productCode}</h2>
         <h3>Price: Rs. ${fingerRings[i].price}</h3>
-        <p>Description: ${fingerRings[i].description}</p>
+        <p> ${fingerRings[i].description}</p>
         <button 
           class='buy-btn' 
           onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")'>

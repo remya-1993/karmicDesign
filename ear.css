@@ -54,9 +54,9 @@ a {
     text-decoration: none;
     gap: 40px;
 }
-
-.menu a:hover {
-    color:rgb(163, 52, 52);
+.menu a:hover,
+.menu a.active{
+    color: rgb(163, 52, 52);
 }
 .details .icon {
     display: none;
@@ -169,9 +169,11 @@ h2 {
 .popup1 .popup-wrapper {
     display: flex;
     /* margin: 100px 150px 150px 150px; */
+    margin: 0 auto;
     gap: 60px;
     min-height: 70vh;
     width: 100%;
+    max-width: 990px;
     border-radius: 5px;
     background-color: #171616;
     border: 1px solid #212020;
@@ -245,9 +247,9 @@ h2 {
     margin-top: 25px;
 }
 
-/* .img_details {
-    margin-top: 25px;
-} */
+.img_details {
+    margin: 0 auto;
+}
 
 .img_details h1 {
     color: white;
@@ -272,7 +274,7 @@ h2 {
 .img_details button {
     padding: 8px 10px;
     font-size: 15px;
-    width: 80%;
+    width: 60%;
     border-radius: 2px;
     border: 0;
     margin: 10px;
@@ -459,12 +461,9 @@ h2 {
         top: 0;
         right: 0;
     }
-
-
-    
     .footer {
-        padding: 10px;
-        max-width: 100%;
+        padding: 10px 5px;
+        width: 100%;
     }
     .data{
         display: flex;

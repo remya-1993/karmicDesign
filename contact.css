@@ -61,7 +61,8 @@ a {
     gap: 40px;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a.active{
     color: rgb(163, 52, 52);
 }
 .details .icon {

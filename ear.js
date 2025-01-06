@@ -2,84 +2,84 @@ const earrings = [
   {
     title: "Multi Color Danglers",
     productCode: "Kd-51",
-    price: "Rs. 150",
+    price: 150,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg",
     description: "Made up with multicoloured stones and beads.",
   },
   {
     title: "Golden Jhumka",
     productCode: "Kd-52",
-    price: "Rs. 125",
+    price: 125,
     imgSrc: "./img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg",
     description: "Made up with golden and black coloured beads. Its suitable for traditional dresses.",
   },
   {
     title: "Multi Color Jhumka",
     productCode: "Kd-53",
-    price: "Rs. 120",
+    price: 120,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg",
     description: "Made up with multicoloured beads along with ear chain.",
   },
   {
     title: "Beaded Earrings",
     productCode: "Kd-54",
-    price: "Rs. 100",
+    price: 100,
     imgSrc: "./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg",
     description: "Made up with multicoloured beads.",
   },
   {
     title: "White Color Danglers",
     productCode: "Kd-55",
-    price: "Rs. 170",
+    price: 170,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg",
     description: "Made up with white-coloured beads.",
   },
   {
     title: "Traditional Jhumka",
     productCode: "Kd-56",
-    price: "Rs. 115",
+    price: 115,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg",
     description: "Made up with golden coloured beads.",
   },
   {
     title: "Beaded Danglers",
     productCode: "Kd-57",
-    price: "Rs. 140",
+    price: 140,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg",
     description: "Made up with multicoloured beads.",
   },
   {
     title: "Stone Earrings",
     productCode: "Kd-58",
-    price: "Rs. 110",
+    price: 110,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg",
     description: "Made up with stone and multicoloured beads.",
   },
   {
     title: "Multi Jhumka",
     productCode: "Kd-59",
-    price: "Rs. 130",
+    price: 130,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg",
     description: "Made up with golden beads.",
   },
   {
     title: "Black Stone Earrings",
     productCode: "Kd-60",
-    price: "Rs. 180",
+    price: 180,
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg",
     description: "Made up with black-coloured stones.",
   },
   {
     title: "Multi Color Stud",
     productCode: "Kd-61",
-    price: "Rs. 180",
+    price: 180,
     imgSrc: "./img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg",
     description: "Made up with multicoloured stones.",
   },
   {
     title: "Metal Jhumka",
     productCode: "Kd-62",
-    price: "Rs. 180",
+    price: 180,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg",
     description: "Made up with metal beads.",
   },
@@ -97,7 +97,7 @@ function earringsPage() {
         <h1>${earrings[i].title}</h1>
         <h2>Product Code: ${earrings[i].productCode}</h2>
         <h3>Price: ${earrings[i].price}</h3>
-        <p>Description: ${earrings[i].description}</p>
+        <p>${earrings[i].description}</p>
         <button 
           class='buy-btn' 
           onclick='showModal("${earrings[i].title}", "${earrings[i].productCode}", "${earrings[i].price}", "${earrings[i].imgSrc}", "${earrings[i].description}")'>
