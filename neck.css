@@ -26,7 +26,7 @@ body {
     font-family: "Baskervville SC", serif;
     font-weight: 650;
     font-style: normal;
-    
+
 }
 
 #heading:hover {
@@ -67,7 +67,7 @@ a {
 }
 
 .menu a:hover,
-.menu a.active{
+.menu a.active {
     color: rgb(163, 52, 52);
 }
 
@@ -231,10 +231,11 @@ h2 {
 .img_details {
     margin: 0 auto;
 }
-.img{
+
+.img {
     margin: 0 auto;
     cursor: pointer;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 .img_details h1 {
@@ -283,7 +284,7 @@ h2 {
     right: 0;
     position: absolute;
     cursor: pointer;
-    
+
 }
 
 .footer {
@@ -309,7 +310,7 @@ h2 {
 .data a {
     text-decoration: none;
     color: white;
-    font-size: 15px ;
+    font-size: 15px;
 
 }
 
@@ -320,21 +321,25 @@ h2 {
 
 @media only screen and (max-width: 767px) {
     .container {
-        max-width: 100%;
-        /* padding: 5px;         */
+        width: 100%;
+        max-width: 990px;
+        /* padding:  5px;         */
         align-items: center;
         flex-direction: column;
         justify-content: center;
         display: flex;
     }
 
-    /* .header {
-        max-width: 900px;
-        width: 100%;
-        padding: 20px;
+    .header {
+        max-width: 100%;
+        /* width: 100%; */
+        padding: 5px;
         height: 50px;
-    } */
-
+        
+    }
+    #heading {
+        font-size: 25px;
+    }
 
     .menu {
         display: none;
@@ -348,8 +353,6 @@ h2 {
 
     .details .icon {
         display: block;
-    
-        
     }
 
     .details .menu {
@@ -398,10 +401,12 @@ h2 {
         padding: 15px;
 
     }
+
     .box1 {
         max-width: 100%;
-        padding: 20px;
+        /* padding: 20px; */
     }
+
     .necklace-item {
         align-items: center;
         max-width: 100%;
@@ -426,38 +431,43 @@ h2 {
         align-items: center;
 
     }
-    .mainHead{
+
+    .mainHead {
         font-size: 10px;
     }
+
     .popup1 {
-        width: 100%;   
+        width: 100%;
     }
 
     .popup-wrapper {
         max-width: 990px;
         width: 100%;
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     text-align: center;
-     /* margin-top: 15px; */
-     position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        /* margin-top: 15px; */
+        position: relative;
     }
+
     .popup-wrapper img {
         width: 70%;
-     margin-top: 30px;
+        margin-top: 30px;
     }
-    .popup-wrapper .close{
+
+    .popup-wrapper .close {
         width: 50px;
         position: absolute;
         top: 0;
         right: 0;
     }
-   
+
 
     .footer {
-        padding: 10px 5px;
+        padding: 5px;
         width: 100%;
+        
     }
 
     .data {

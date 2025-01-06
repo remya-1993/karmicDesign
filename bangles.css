@@ -330,6 +330,7 @@ h1:hover {
 @media only screen and (max-width: 767px) {
     .container {
         width: 100%;
+        max-width: 990px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -338,8 +339,8 @@ h1:hover {
 
     .header {
      max-width: 100%;
-     width: 100%;
-        padding: 20px;
+     /* width: 100%; */
+        /* padding: 5px; */
         height: 50px;
     }
 
@@ -408,16 +409,16 @@ h1:hover {
     }
     .box1 {
         max-width: 100%;
-        padding: 20px;
+        /* padding: 20px; */
     }
     .bangles-item{
         align-items: center;
        max-width: 100%;
-       width: 350px;
+       width: 280px;
     }
     .bangles-item img{
         align-items: center;
-        width: 300px
+        width: 280px
     }
     .bangles h1,
     h2,
@@ -451,14 +452,14 @@ h1:hover {
         right: 0;
     }
     .footer {
-        padding: 10px 5px;
-        width: 100%;
+        padding: 15px;
+        max-width: 100%;
     }
     .data{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+       max-width: 990px;
         text-align: center;
     }
    .wrapper h4{
