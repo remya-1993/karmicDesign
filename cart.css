@@ -68,7 +68,7 @@ a {
     text-align: center;
 }
 .cart-item{
-    /* margin-left: 100px; */
+    /* margin-left: 100px; */   
     width: 100%;
     max-width: 100%;
     margin-top: 15px;
@@ -84,7 +84,7 @@ a {
     border: 1px solid black;
 }
 .cartBtn{
-  margin: 35px;
+  margin: 15px;
     width: 30%;
     padding: 10px;
     border-radius: 5px;
@@ -176,12 +176,13 @@ a {
     }
     .box1 {
         max-width: 100%;
-        padding: 20px;
+        /* padding: 20px; */
     }
    
     .cart-item{
         width: 100%;
         text-align: center;
+        margin: 0 auto;
     }
     .cart-item img{
         width: 200px;
