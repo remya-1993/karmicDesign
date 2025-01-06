@@ -6,12 +6,9 @@ window.onload = function () {
 
     cartItems.forEach((item, index) => {
 
-        console.log("itemPrice:", item.price, "itemQuantity:", item.quantity);
         const itemPrice = parseFloat(item.price); 
         const itemQuantity = parseInt(item.quantity, 10);
         const itemTotal = itemPrice * itemQuantity;
-
-        console.log("itemPrice:", itemPrice, "itemQuantity:", itemQuantity, "itemTotal:", itemTotal);
 
         const itemHTML = `
         <div class="cart-item">
@@ -32,8 +29,6 @@ window.onload = function () {
           <br>
         </div>
       `;
-
-
         cartContainer.innerHTML += itemHTML;
     });
 };
@@ -92,3 +87,5 @@ function myFunction() {
       x.className = "details";
     }
   }
+
+

@@ -83,8 +83,8 @@ function banglesPage() {
 
   for (let i = 0; i < bangles.length; i++) {
     banglesHTML += `
-      <div class="bangles-item">
-        <img src="${bangles[i].image}" alt="${bangles[i].name}" width="230px" />
+      <div class="bangles-item" > 
+        <img src="${bangles[i].image}" onclick='showModal("${bangles[i].name}", "${bangles[i].productCode}", "${bangles[i].price}", "${bangles[i].image}", "${bangles[i].description}")' alt="${bangles[i].name}" width="230px" />
         <h1>${bangles[i].name}</h1>
         <h2>Product Code: ${bangles[i].productCode}</h2>
         <h3>Price: Rs. ${bangles[i].price}</h3>

@@ -63,8 +63,9 @@ function ringsPage() {
 
   for (let i = 0; i < fingerRings.length; i++) {
     fingerRingsHTML += `
-      <div class="fingerrings-item">
-        <img src="${fingerRings[i].image}" alt="${fingerRings[i].name}" width="230px" />
+      <div class="fingerrings-item" >
+>
+        <img src="${fingerRings[i].image}" onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")' alt="${fingerRings[i].name}" width="230px" />
         <h1>${fingerRings[i].name}</h1>
         <h2>Product Code: ${fingerRings[i].productCode}</h2>
         <h3>Price: Rs. ${fingerRings[i].price}</h3>
@@ -196,3 +197,5 @@ function myFunction() {
     x.className = "details";
   }
 }
+
+

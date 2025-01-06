@@ -107,7 +107,8 @@ function necklacePage() {
 
     necklacesHTML += `
       <div class="necklace-item">
-        <img src="${necklaces[i].imgSrc}" alt="${necklaces[i].title}" width="230px" />
+>
+        <img src="${necklaces[i].imgSrc}"  onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")' alt="${necklaces[i].title}" width="230px" />
         <h1>${necklaces[i].title}</h1>
         <h2>Product Code: ${necklaces[i].productCode}</h2>
         <h3>Price: ${necklaces[i].price}</h3>

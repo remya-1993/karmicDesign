@@ -93,7 +93,8 @@ function earringsPage() {
 
     earringsHTML += `
       <div class="earrings-item">
-        <img src="${earrings[i].imgSrc}" alt="${earrings[i].title}" width="230px" />
+>
+        <img src="${earrings[i].imgSrc}" onclick='showModal("${earrings[i].title}", "${earrings[i].productCode}", "${earrings[i].price}", "${earrings[i].imgSrc}", "${earrings[i].description}")'>  alt="${earrings[i].title}" width="230px" />
         <h1>${earrings[i].title}</h1>
         <h2>Product Code: ${earrings[i].productCode}</h2>
         <h3>Price: ${earrings[i].price}</h3>
