@@ -1,58 +1,59 @@
 const fingerRings = [
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-151",
-      price: 120,
-      image: "./img/ring1.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-151",
+    price: 120,
+    image: "./img/ring1.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-152",
-      price: 100,
-      image: "./img/ring2.jpeg",
-      description: "It is a thin shaped finger ring."
-  {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-153",
-      price: 170,
-      image: "./img/ring3.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-152",
+    price: 100,
+    image: "./img/ring2.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-154",
-      price: 100,
-      image: "./img/ring4.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-153",
+    price: 170,
+    image: "./img/ring3.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-155",
-      price: 110,
-      image: "./img/ring5.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-154",
+    price: 100,
+    image: "./img/ring4.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-156",
-      price: 110,
-      image: "./img/ring6.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-155",
+    price: 110,
+    image: "./img/ring5.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-157",
-      price: 110,
-      image: "./img/ring7.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-156",
+    price: 110,
+    image: "./img/ring6.jpeg",
+    description: "It is a thin shaped finger ring."
   },
   {
-      name: "Anti Tarnish Rings",
-      productCode: "Kd-158",
-      price: 110,
-      image: "./img/ring8.jpeg",
-      description: "It is a thin shaped finger ring."
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-157",
+    price: 110,
+    image: "./img/ring7.jpeg",
+    description: "It is a thin shaped finger ring."
+  },
+  {
+    name: "Anti Tarnish Rings",
+    productCode: "Kd-158",
+    price: 110,
+    image: "./img/ring8.jpeg",
+    description: "It is a thin shaped finger ring."
   }
 ];
 
@@ -149,7 +150,7 @@ function whatsapp() {
 
   window.open(url, '_blank');
 }
-function addCart(){
+function addCart() {
   window.location.assign("./cart.html")
 }
 function addCart() {
@@ -173,10 +174,10 @@ function addCart() {
   const existingItemIndex = cart.findIndex(item => item.productCode === productCode);
 
   if (existingItemIndex > 0) {
-   
+
     cart[existingItemIndex].quantity += 1;
   } else {
-    
+
     cart.push(itemDetails);
   }
 
@@ -184,7 +185,7 @@ function addCart() {
 
   alert("Item added to cart!");
 }
-function cart(){
+function cart() {
   window.location.assign("cart.html")
 }
 function myFunction() {
