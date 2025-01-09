@@ -336,6 +336,19 @@ h1:hover {
     display: flex;
     justify-content: space-between;
 }
+.socialMedia{
+    border: 1px solid rgb(115, 93, 93);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    padding: 5px;
+}
+.socialImg{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 767px) {
     .container {

@@ -308,7 +308,6 @@ h2 {
 .footer h4 {
     color: white;
     font-size: 1.5rem;
-    margin-top: 20px;
 }
 
 .data {
@@ -327,6 +326,19 @@ h2 {
 .info {
     display: flex;
     justify-content: space-between;
+}
+.socialMedia{
+    border: 1px solid rgb(115, 93, 93);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    padding: 5px;
+}
+.socialImg{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {

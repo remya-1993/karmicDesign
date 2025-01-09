@@ -93,20 +93,6 @@ a {
 
     
 }
-/* .cart-icon {
-    position: relative;
-  }
-  
-  .cart-quantity {
-    position: absolute;
-    top: 10px;
-    right: 120px;
-    background-color: #ff0000;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 2px 5px;
-    border-radius: 50%;
-  } */
 
 @media only screen and (max-width: 767px) {
 
@@ -202,10 +188,15 @@ a {
         width: 200px;
        
     }
-    .cart-item h2,p{
+    .cart-item h2{
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
     }
+    .cart-item p{
+        width: 100%;
+        font-size: 15px;
+    }
+
     .cartBtn{
         width: 100%;
         padding: 10px;
