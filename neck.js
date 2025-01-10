@@ -19,7 +19,7 @@ const necklaces = [
   {
     title: "Green Stone Neckpiece",
     productCode: "Kd-03",
-    price: 190,
+    price: 350,
     imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.29.36 PM.jpeg",
     description: "Made with high-quality beads. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
@@ -96,7 +96,42 @@ const necklaces = [
     description: "Made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
     button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
+
 ];
+
+// necklaces.push({
+//   title: "Butterfly invisible chocker ",
+//   productCode: "Kd-13",
+//   price: 180,
+//   imgSrc: "./img/butterfly_chain1",
+//   description: "A stunning simple necklace suitable for formal occasions.",
+//   button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+// },
+// {
+//   title: "Invisible chocker ",
+//   productCode: "Kd-14",
+//   price: 180,
+//   imgSrc: "./img/invisible1",
+//   description: "A stunning simple necklace suitable for formal occasions.",
+//   button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+// },
+// {
+//   title: "Invisible chocker ",
+//   productCode: "Kd-15",
+//   price: 180,
+//   imgSrc: "./img/invisible2",
+//   description: "A stunning simple necklace suitable for formal occasions.",
+//   button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+// },
+// {
+//   title: "Invisible chocker ",
+//   productCode: "Kd-16",
+//   price: 180,
+//   imgSrc: "./img/invisible3",
+//   description: "A stunning simple necklace suitable for formal occasions.",
+//   button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
+// }
+// );
 
 
 function necklacePage() {
