@@ -426,7 +426,6 @@ h2 {
 
     .box1 {
         max-width: 100%;
-        /* padding: 20px; */
     }
 
     .necklace-item {
@@ -470,7 +469,6 @@ h2 {
         flex-direction: column;
         flex-wrap: wrap;
         text-align: center;
-        /* margin-top: 15px; */
         position: relative;
     }
 
