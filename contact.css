@@ -136,8 +136,10 @@ body {
     }
 
     .common-head {
-        min-height: 110px;
+        min-height: 70px;
     }
-
+    .footer {
+        max-width: 100%;
+    }
 
 }
