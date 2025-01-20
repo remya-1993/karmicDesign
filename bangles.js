@@ -151,8 +151,8 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 
 function whatsapp() {
 
-  var name = document.querySelector('.cusName').value.trim();
-  var qty = document.querySelector('.quantity').value.trim();
+  var name = document.querySelector('#cusName').value.trim();
+  var qty = document.querySelector('#quantity').value.trim();
 
   var title = document.getElementById('modal-title').textContent.trim();
   var productCode = document.getElementById('modal-code').textContent.trim();
