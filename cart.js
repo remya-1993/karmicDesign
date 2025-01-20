@@ -13,7 +13,7 @@ window.onload = function () {
     const itemHTML = `
         <div class="col">
        <div class="card mb-3 card-card p-3">
-       <div class="row align-items-center">
+       <div class="row align-items-center g-3">
        <div class="col-12 col-md-2 col-lg-2">
        <div class="cart-img-wrapper mx-auto">
           <img src="${item.image}" alt="${item.title}" class="w-100 h-100 ">
