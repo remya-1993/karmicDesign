@@ -1,76 +1,76 @@
 const bangles = [
   {
-    name: "Beads bangles",
+    title: "Beads bangles",
     productCode: "Kd-101",
     price: 150,
     image: "./img/bang 1.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Golden stone work bangles",
+    title: "Golden stone work bangles",
     productCode: "Kd-102",
     price: 120,
     image: "./img/bang 3.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Thread bangles",
+    title: "Thread bangles",
     productCode: "Kd-103",
     price: 100,
     image: "./img/BANG4.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-104",
     price: 170,
     image: "./img/BANG5.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-105",
     price: 100,
     image: "./img/BANG6.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-106",
     price: 110,
     image: "./img/BANG7.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-107",
     price: 110,
     image: "./img/BANG1.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Golden stone work bangles",
+    title: "Golden stone work bangles",
     productCode: "Kd-108",
     price: 110,
     image: "./img/BANG2.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-109",
     price: 110,
     image: "./img/BANG3.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-110",
     price: 110,
     image: "./img/Stone.jpeg",
     description: "Made up with beads and stones."
   },
   {
-    name: "Handmade stone work bangles",
+    title: "Handmade stone work bangles",
     productCode: "Kd-111",
     price: 110,
     image: "./img/Stone2.jpeg",
@@ -83,17 +83,32 @@ function banglesPage() {
 
   for (let i = 0; i < bangles.length; i++) {
     banglesHTML += `
-      <div class="bangles-item" > 
-        <img src="${bangles[i].image}" onclick='showModal("${bangles[i].name}", "${bangles[i].productCode}", "${bangles[i].price}", "${bangles[i].image}", "${bangles[i].description}")' alt="${bangles[i].name}" width="230px" />
-        <h1>${bangles[i].name}</h1>
-        <h2>Product Code: ${bangles[i].productCode}</h2>
-        <h3>Price: Rs. ${bangles[i].price}</h3>
-        <p> ${bangles[i].description}</p>
+   <div class="col">
+     <div class="card h-100 card-border-radius overflow-hidden">
+        <img src="${bangles[i].image}"  class="card-img-top w-100 j-c-img" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${bangles[i].title}" 
+  data-code="${bangles[i].productCode}" 
+  data-price="${bangles[i].price}" 
+  data-img="${bangles[i].image}" 
+  data-description="${bangles[i].description}"/>
+        <div class="card-body pb-0">
+        <h5 class="font-16 fw-semibold text-start pt-3">${bangles[i].title}</h5>
+        <h6 class="class="fw-semibold font-16"">${bangles[i].productCode} <span class="font-12 fw-light">(Product Code)</span></h6>
+        <p class="font-14 fw-medium mb-0">${bangles[i].description}</p>
+        </div>
+         <div class="card-footer text-center border-0 bg-white pb-3 pt-4 d-flex align-items-center justify-content-between">
+        <h3 class="font-20 fw-bold mb-0">Rs.${bangles[i].price}</h3>
         <button 
-          class='buy-btn' 
-          onclick='showModal("${bangles[i].name}", "${bangles[i].productCode}", "${bangles[i].price}", "${bangles[i].image}", "${bangles[i].description}")'>
+         class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${bangles[i].title}" 
+  data-code="${bangles[i].productCode}" 
+  data-price="${bangles[i].price}" 
+  data-img="${bangles[i].image}" 
+  data-description="${bangles[i].description}">
           Know More..
         </button>
+      </div>
+      </div>
       </div>
     `;
   }
@@ -103,18 +118,36 @@ function banglesPage() {
 }
 banglesPage();
 
-function showModal(title, productCode, price, imgSrc, description) {
+const exampleModal = document.getElementById('exampleModal');
 
-  document.getElementById('modal-title').textContent = title;
-  document.getElementById('modal-code').textContent = productCode;
-  document.getElementById('modal-price').textContent = price;
-  document.getElementById('modal-img').src = imgSrc;
-  document.getElementById('modal-description').textContent = description;
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  const button = event.relatedTarget;
 
-  document.getElementById('popup1').style.display = 'block';
-  document.body.classList.add('modal-open');
-}
-cument.getElementById('popup2').style.display = 'none';
+  // Extract info from data-* attributes
+  const title = button.getAttribute('data-title');
+  const code = button.getAttribute('data-code');
+  const price = button.getAttribute('data-price');
+  const img = button.getAttribute('data-img');
+  const description = button.getAttribute('data-description');
+
+  // Update modal content
+  const modalTitle = document.getElementById('modal-title');
+  const modalCode = document.getElementById('modal-code');
+  const modalPrice = document.getElementById('modal-price');
+  const modalImg = document.getElementById('modal-img');
+  const modalDescription = document.getElementById('modal-description');
+
+  modalTitle.textContent = title;
+  modalCode.textContent = code;
+  modalPrice.textContent = `Rs. ${price}`;
+  modalImg.src = img;
+  modalDescription.textContent = description;
+});
+
+
+
+
 
 function whatsapp() {
 
@@ -198,10 +231,10 @@ function addCart() {
   const existingItemIndex = cart.findIndex(item => item.productCode === productCode);
 
   if (existingItemIndex > 0) {
-   
+
     cart[existingItemIndex].quantity += 1;
   } else {
-    
+
     cart.push(itemDetails);
   }
 
@@ -210,7 +243,7 @@ function addCart() {
   alert("Item added to cart!");
 }
 
-function cart(){
+function cart() {
   window.location.assign("cart.html")
 }
 function myFunction() {

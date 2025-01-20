@@ -4,97 +4,85 @@ const necklaces = [
     title: "Single Line Neckpiece",
     productCode: "Kd-01",
     price: 150,
-    imgSrc: "./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-28 at 10.32.33 PM.jpeg",
     description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Beaded Neckpiece",
     productCode: "Kd-02",
     price: 170,
-    imgSrc: "./img/WhatsApp Image 2024-08-17 at 7.42.58 PM (1).jpeg",
+    image: "./img/WhatsApp Image 2024-08-17 at 7.42.58 PM (1).jpeg",
     description: "Made with high-quality beads. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'> Know More</button>",
   },
   {
     title: "Green Stone Neckpiece",
     productCode: "Kd-03",
     price: 350,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.29.36 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.29.36 PM.jpeg",
     description: "Made with high-quality beads. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "White Beaded Neckpiece",
     productCode: "Kd-04",
     price: 145,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.50 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.23.50 PM.jpeg",
     description: "Made with high-quality white and golden coloured beads. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Single Beaded Chain",
     productCode: "Kd-05",
     price: 100,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.14.39 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.14.39 PM.jpeg",
     description: "Made with coloured stones and beads. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Traditional Neckpiece",
     productCode: "Kd-06",
     price: 210,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.08.38 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.08.38 PM.jpeg",
     description: "Made with white and pink coloured beads with golden chain. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Multi Colour Neckpiece",
     productCode: "Kd-07",
     price: 225,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.25.15 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.25.15 PM.jpeg",
     description: "Made with golden coloured metals along with matching earrings. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Long Golden Chain",
     productCode: "Kd-08",
     price: 220,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.11.23 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.11.23 PM.jpeg",
     description: "Made with golden metals with big matching locket. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Traditional Neckpiece",
     productCode: "Kd-09",
     price: 185,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 11.31.36 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 11.31.36 PM.jpeg",
     description: "Made with white and green stones in golden chain. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Traditional Manga Mala",
     productCode: "Kd-10",
     price: 190,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.15.19 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.15.19 PM.jpeg",
     description: "Traditional palakka mala made with green coloured stones with earrings. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "White Pearl Neckpiece",
     productCode: "Kd-11",
     price: 200,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.23.49 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.23.49 PM.jpeg",
     description: "Traditional Neckpiece chain made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
   {
     title: "Fabric Long Chain",
     productCode: "Kd-12",
     price: 170,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.19.18 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.19.18 PM.jpeg",
     description: "Made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
-    button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
   },
 
 ];
@@ -103,77 +91,106 @@ necklaces.push({
   title: "Butterfly invisible chocker  (customized) ",
   productCode: "Kd-13",
   price: 180,
-  imgSrc: "./img/butterfly_chain1.jpg",
+  image: "./img/butterfly_chain1.jpg",
   description: "A stunning simple necklace suitable for formal occasions.",
-  button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
 },
-{
-  title: "Invisible chocker  (customized) ",
-  productCode: "Kd-14",
-  price: 180,
-  imgSrc: "./img/invisible1.jpg",
-  description: "A stunning simple necklace suitable for formal occasions.",
-  button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
-},
-{
-  title: "Invisible chocker  (customized) ",
-  productCode: "Kd-15",
-  price: 180,
-  imgSrc: "./img/invisible2.jpg",
-  description: "A stunning simple necklace suitable for formal occasions.",
-  button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
-},
-{
-  title: "Invisible chocker (customized)",
-  productCode: "Kd-16",
-  price: 180,
-  imgSrc: "./img/invisible3.jpg",
-  description: "A stunning simple necklace suitable for formal occasions.",
-  button: "<button class='buy-btn' onclick='showModal()'>Know More</button>",
-}
+  {
+    title: "Invisible chocker  (customized) ",
+    productCode: "Kd-14",
+    price: 180,
+    image: "./img/invisible1.jpg",
+    description: "A stunning simple necklace suitable for formal occasions.",
+  },
+  {
+    title: "Invisible chocker  (customized) ",
+    productCode: "Kd-15",
+    price: 180,
+    image: "./img/invisible2.jpg",
+    description: "A stunning simple necklace suitable for formal occasions.",
+  },
+  {
+    title: "Invisible chocker (customized)",
+    productCode: "Kd-16",
+    price: 180,
+    image: "./img/invisible3.jpg",
+    description: "A stunning simple necklace suitable for formal occasions.",
+  }
 );
 
 
 function necklacePage() {
   let necklacesHTML = '';
-
   for (let i = 0; i < necklaces.length; i++) {
 
 
     necklacesHTML += `
-      <div class="necklace-item">
->
-        <img src="${necklaces[i].imgSrc}"  onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")' alt="${necklaces[i].title}" width="230px" />
-        <h1>${necklaces[i].title}</h1>
-        <h2>Product Code: ${necklaces[i].productCode}</h2>
-        <h3>Price: ${necklaces[i].price}</h3>
-        <p>${necklaces[i].description}</p>
+     <div class="col">
+     <div class="card h-100 card-border-radius overflow-hidden">
+        <img src="${necklaces[i].image}" class="card-img-top w-100 j-c-img" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="${necklaces[i].title}" 
+  data-code="${necklaces[i].productCode}" 
+  data-price="${necklaces[i].price}" 
+  data-img="${necklaces[i].image}" 
+  data-description="${necklaces[i].description}"/> 
+        <div class="card-body pb-0">
+        <h5 class="font-16 fw-semibold text-start pt-3">${necklaces[i].title}</h5>
+        <h6 "class="fw-semibold font-16">${necklaces[i].productCode} <span class="font-12 fw-light">(Product Code)</span></h6>
+        <p class="font-14 fw-medium mb-0">${necklaces[i].description}</p>
+        </div>
+         <div class="card-footer text-center border-0 bg-white pb-3 pt-4 d-flex align-items-center justify-content-between">
+        <h3 class="font-20 fw-bold mb-0">Rs.${necklaces[i].price}</h3>
         <button 
-          class='buy-btn' 
-          onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")'>
+         class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+            data-title="${necklaces[i].title}" 
+  data-code="${necklaces[i].productCode}" 
+  data-price="${necklaces[i].price}" 
+  data-img="${necklaces[i].image}" 
+  data-description="${necklaces[i].description}">
           Know More..
         </button>
       </div>
+      </div>
+      </div>
     `;
-    console.log(necklaces[i].title);
+
   }
 
   document.getElementById("necklace-container").innerHTML = necklacesHTML;
 
 }
+
 necklacePage();
 
-function showModal(title, productCode, price, imgSrc, description) {
 
-  document.getElementById('modal-title').textContent = title;
-  document.getElementById('modal-code').textContent = productCode;
-  document.getElementById('modal-price').textContent = price;
-  document.getElementById('modal-img').src = imgSrc;
-  document.getElementById('modal-description').textContent = description;
+const exampleModal = document.getElementById('exampleModal');
 
-  document.getElementById('popup1').style.display = 'block';
-  document.body.classList.add('modal-open');
-}
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  const button = event.relatedTarget;
+
+  // Extract info from data-* attributes
+  const title = button.getAttribute('data-title');
+  const code = button.getAttribute('data-code');
+  const price = button.getAttribute('data-price');
+  const img = button.getAttribute('data-img');
+  const description = button.getAttribute('data-description');
+
+  // Update modal content
+  const modalTitle = document.getElementById('modal-title');
+  const modalCode = document.getElementById('modal-code');
+  const modalPrice = document.getElementById('modal-price');
+  const modalImg = document.getElementById('modal-img');
+  const modalDescription = document.getElementById('modal-description');
+
+  modalTitle.textContent = title;
+  modalCode.textContent = code;
+  modalPrice.textContent = `Rs. ${price}`;
+  modalImg.src = img;
+  modalDescription.textContent = description;
+});
+
+
+
+
 
 
 function imgdetails1() {
@@ -238,7 +255,7 @@ function whatsapp() {
   window.open(url, '_blank');
 }
 
-function addCart(){
+function addCart() {
   window.location.assign("./cart.html")
 }
 
@@ -264,10 +281,10 @@ function addCart() {
   const existingItemIndex = cart.findIndex(item => item.productCode === productCode);
 
   if (existingItemIndex > 0) {
-   
+
     cart[existingItemIndex].quantity += 1;
   } else {
-    
+
     cart.push(itemDetails);
   }
 
@@ -276,7 +293,7 @@ function addCart() {
   alert("Item added to cart!");
 }
 
-function cart(){
+function cart() {
   window.location.assign("cart.html")
 }
 

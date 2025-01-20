@@ -1,55 +1,55 @@
 const fingerRings = [
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-151",
     price: 120,
     image: "./img/ring1.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-152",
     price: 100,
     image: "./img/ring2.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-153",
     price: 170,
     image: "./img/ring3.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-154",
     price: 100,
     image: "./img/ring4.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-155",
     price: 110,
     image: "./img/ring5.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-156",
     price: 110,
     image: "./img/ring6.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-157",
     price: 110,
     image: "./img/ring7.jpeg",
     description: "It is a thin shaped finger ring."
   },
   {
-    name: "Anti Tarnish Rings",
+    title: "Anti Tarnish Rings",
     productCode: "Kd-158",
     price: 110,
     image: "./img/ring8.jpeg",
@@ -63,21 +63,34 @@ function ringsPage() {
 
   for (let i = 0; i < fingerRings.length; i++) {
     fingerRingsHTML += `
-      <div class="fingerrings-item" >
->
-        <img src="${fingerRings[i].image}" onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")' alt="${fingerRings[i].name}" width="230px" />
-        <h1>${fingerRings[i].name}</h1>
-        <h2>Product Code: ${fingerRings[i].productCode}</h2>
-        <h3>Price: Rs. ${fingerRings[i].price}</h3>
-        <p> ${fingerRings[i].description}</p>
+     <div class="col">
+     <div class="card h-100 card-border-radius overflow-hidden">
+        <img src="${fingerRings[i].image}"  class="card-img-top w-100 j-c-img" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${fingerRings[i].title}" 
+  data-code="${fingerRings[i].productCode}" 
+  data-price="${fingerRings[i].price}" 
+  data-img="${fingerRings[i].image}" 
+  data-description="${fingerRings[i].description}"/>
+        <div class="card-body pb-0">
+        <h5 class="font-16 fw-semibold text-start pt-3">${fingerRings[i].title}</h5>
+        <h6 class="class="fw-semibold font-16"">${fingerRings[i].productCode} <span class="font-12 fw-light">(Product Code)</span></h6>
+        <p class="font-14 fw-medium mb-0">${fingerRings[i].description}</p>
+        </div>
+         <div class="card-footer text-center border-0 bg-white pb-3 pt-4 d-flex align-items-center justify-content-between">
+        <h3 class="font-20 fw-bold mb-0">Rs.${fingerRings[i].price}</h3>
         <button 
-          class='buy-btn' 
-          onclick='showModal("${fingerRings[i].name}", "${fingerRings[i].productCode}", "${fingerRings[i].price}", "${fingerRings[i].image}", "${fingerRings[i].description}")'>
+         class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${fingerRings[i].title}" 
+  data-code="${fingerRings[i].productCode}" 
+  data-price="${fingerRings[i].price}" 
+  data-img="${fingerRings[i].image}" 
+  data-description="${fingerRings[i].description}">
           Know More..
         </button>
       </div>
+      </div>
+      </div>
     `;
-    console.log(fingerRings[i].name);
   }
 
   document.getElementById("fingerRings-container").innerHTML = fingerRingsHTML;
@@ -85,17 +98,35 @@ function ringsPage() {
 
 ringsPage();
 
-function showModal(title, productCode, price, imgSrc, description) {
+const exampleModal = document.getElementById('exampleModal');
 
-  document.getElementById('modal-title').textContent = title;
-  document.getElementById('modal-code').textContent = productCode;
-  document.getElementById('modal-price').textContent = price;
-  document.getElementById('modal-img').src = imgSrc;
-  document.getElementById('modal-description').textContent = description;
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  const button = event.relatedTarget;
 
-  document.getElementById('popup1').style.display = 'block';
-  document.body.classList.add('modal-open');
-}
+  // Extract info from data-* attributes
+  const title = button.getAttribute('data-title');
+  const code = button.getAttribute('data-code');
+  const price = button.getAttribute('data-price');
+  const img = button.getAttribute('data-img');
+  const description = button.getAttribute('data-description');
+
+  // Update modal content
+  const modalTitle = document.getElementById('modal-title');
+  const modalCode = document.getElementById('modal-code');
+  const modalPrice = document.getElementById('modal-price');
+  const modalImg = document.getElementById('modal-img');
+  const modalDescription = document.getElementById('modal-description');
+
+  modalTitle.textContent = title;
+  modalCode.textContent = code;
+  modalPrice.textContent = `Rs. ${price}`;
+  modalImg.src = img;
+  modalDescription.textContent = description;
+});
+
+
+
 
 function closeModal() {
   document.getElementById('popup1').style.display = 'none';

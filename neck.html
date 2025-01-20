@@ -5,158 +5,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Necklaces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./neck.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="./neck.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Protest+Guerrilla&family=Stint+Ultra+Condensed&display=swap"
-    rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Stint+Ultra+Condensed&display=swap"
-    rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+
 
 
 <body>
-    <div class="container">
 
-        <div class="header">
-            <div class="head">
-                <img src="./img/removebg-logo1.png" alt="karmic_logo" width="100px" height="75px">
-                <h1 id="heading">Karmic Designs</h1>
-            </div>
-            <div class="details" id="myTopnav">
-                <div class="menu">
-                    <a href="./index.html">Home</a>
-                    <a href="./neck.html" class="active">Neck Pieces</a>
-                    <a href="./ear.html">Earrings</a>
-                    <a href="./bangles.html">Bangles</a>
-                    <a href="./rings.html">Finger Rings</a>
-                    <a href="./contact.html"> Contact Us</a>
-                    <img onclick="cart()" src="./img/shopping-cart.png" alt="cart_img" width="30px">
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="./img/hamburger.png" alt="Menu" width="25px">
-                </a>
-
-
+    <nav class="navbar navbar-expand-lg position-fixed start-0 end-0 top-0 bg-black" style="z-index: 99;">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/kar_logo.png" alt="karmic_logo" class="logo_size">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="./img/menu.png" alt="Menu" style="width: 42px; height: 42px;">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 font-14 text-white fw-medium" aria-current="page"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./neck.html">Neck Pieces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./ear.html">Earrings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./bangles.html">Bangles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./rings.html">Finger Rings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">
+                            <img onclick="cart()" src="./img/online-shopping.png" alt="cart_img" width="24px">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <div class="common-head"></div>
+    <div class="py-5">
+        <div class="container">
 
-        <div class="mainHead">
-            <h3>Neck Pieces</h3>
-        </div>
-
-        <div class="box1">
-
-            <div id="necklace-container"></div>
-
-            <div class="popup1" id="popup1" style="display: none;">
-                <div class="popup-wrapper">
-
-                    <div class="img">
-                        <img id="modal-img" src="" width="300px" height="300px" alt="Necklace Image">
-                    </div>
-                    <div class="img_details">
-                        <h1 id="modal-title"></h1>
-                        <h5 id="modal-code"></h5>
-                        <h5 id="modal-price"></h5>
-                        <button class="cart" onclick="addCart()">Add to cart</button>
-                        <button class="buyNow" onclick="showPopup2()">Order on WhatsApp</button>
-                        <!-- <p>Description:</p> -->
-                        <p id="modal-description"></p>
-                    </div>
-                    <div class="close" onclick="closeModal('popup1')">
-                        <img src="./img/close.png" width="30px" alt="close">
-                    </div>
-                </div>
-            </div>
-            <div class="popup2" id="popup2" style="display: none;">
-                <div class="popup-wrapper2">
-                    <div class="customerData">
-                        <label for=""> Your Name: </label>
-                        <br>
-                        <input class="cusName" id="cusName" type="text">
-                        <br>
-                        <br>
-                        <label for="">Product Quantity: </label>
-                        <br>
-                        <input class="quantity" id="quantity" type="number" maxlength="2">
-                        <button type="button" onclick="whatsapp()">Send via WhatsApp</button>
-                    </div>
-                    <div class="close1" onclick="closeModal('popup1')">
-                        <img src="./img/close.png" width="30px" alt="close">
-                    </div>
-                </div>
+            <div class="pb-3">
+                <h2 class="font-24 fw-bold pb-1 mb-0 text-black">Neck Pieces</h2>
+                <div class="head-border"></div>
             </div>
 
-            <div class="last_para">
-                <p>Transform your look with our beautifully designed neckpieces. From bold chokers to delicate pendants,
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5 g-4 pt-3"
+                id="necklace-container">
+            </div>
+
+            <div class="mt-5">
+                <p class="font-16 fw-medium">Transform your look with our beautifully designed neckpieces. From bold
+                    chokers to delicate pendants,
                     our collection offers a wide range of styles to match your personality and outfit. Each piece is
-                    crafted with care to ensure it’s as comfortable as it is stunning. - <span>"Karmic Design"</span>
+                    crafted with care to ensure it’s as comfortable as it is stunning. - <span class="fw-bold">"Karmic
+                        Design"</span>
                 </p>
             </div>
 
+
         </div>
-        <div class="footer">
-            <div class="wrapper">
-                <h4><u>Contact Us</u></h4>
-                <br>
-                <div class="data">
-                    <div>
-                        <a href="">ADDRESS</a>
-                        <br>
+    </div>
 
-
-                        <p>Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
-                    </div>
-                    <div>
-                        <a href="">CALL US</a>
-                        <br>
-
-                        <div class="number">
-                            <p>+91 8590210665 </p>
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title font-18 fw-bold" id="modal-title"></h1>
+                    <button type="button" class="btn-close font-12" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-md-4">
+                            <img id="modal-img" src="" alt="Product Image" class="img-fluid mb-3 w-100">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <h5 id="modal-code" class="font-14 fw-bold"></h5>
+                            <h5 id="modal-price" class="font-18 fw-bold"></h5>
+                            <p id="modal-description" class="font-14 fw-medium"></p>
                         </div>
                     </div>
-                    <div>
-                        <a href="">EMAIL US</a>
-                        <br>
-
-                        <div class="mail">
-                            karmic24@gmail.com
+                </div>
+                <div class="modal-footer border-0 px-0">
+                    <div class="row w-100">
+                        <div class="col-12 col-md-6 text-center">
+                            <button type="button" class="btn btn-secondary font-14 fw-semibold w-100"
+                                onclick="addCart()">Add to Cart</button>
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <button type="button" class="btn btn-success font-14 fw-semibold w-100"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order on WhatsApp</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="socialMedia">
-                <span>© 2025 Karmic Design.</span>
-                <div class="socialImg">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title font-18 fw-bold" id="staticBackdropLabel">Enter Details</h1>
+                    <button type="button" class="btn-close font-12" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="" class="font-14 text-grey fw-bold mb-1">Your Name</label>
+                    <div class="mb-3">
+                        <input class="cusName w-100" id="cusName" type="text">
+                    </div>
+                    <label for="" class="font-14 text-grey fw-bold mb-1">Product Quantity</label>
+                    <div>
+                        <input class="cusName w-100" id="quantity" type="number" maxlength="2">
+                    </div>
+                </div>
+                <div class="modal-footer border-0 px-0">
+                    <div class="row w-100">
+                        <div class="col-12 col-md-6">
+                            <button type="button" class="btn btn-secondary font-14 fw-semibold w-100"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <button type="button" class="btn btn-success font-14 fw-semibold w-100"
+                                data-bs-dismiss="modal" onclick="whatsapp()">Send via WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="pb-2">
+                <h2 class="font-18 fw-bold pb-1 mb-0 text-white">Contact Us</h2>
+            </div>
+            <div class="data font-14 fw-medium">
+                <div>
+                    <a href="">Address :</a>
+                    <br>
+                    <p class="add">Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
+                </div>
+                <div>
+                    <a href="">Call Us :</a>
+                    <br>
+
+                    <div class="number">
+                        <p>+91 8590210665 </p>
+
+                    </div>
+                </div>
+                <div>
+                    <a href="">Email Us :</a>
+                    <br>
+
+                    <div class="mail">
+                        <p>karmic24@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-bottom: 1px solid #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-white font-12">© 2025 Karmic Design.</div>
+                <div class="col-6 text-white font-12 text-end">
 
                     <a href="https://www.instagram.com/karmic_designs_/profilecard/?igsh=MTB3bTh1eGRvaDcxdQ=="
-                        target="_blank" rel="noopener noreferrer">
-                        <img src="./img/insta-bw.png" alt="instagram" width="25px">
+                        target="_blank" rel="noopener noreferrer" class="me-3">
+                        <img src="./img/instagram-karmic.png" alt="instagram" width="25px">
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61557533731751&mibextid=ZbWKwL" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./img/facebook.png" alt="facebook" width="25px">
+                        <img src="./img/facebook-karmic.png" alt="facebook" width="25px">
                     </a>
                 </div>
 
             </div>
-
         </div>
-
-        <script src="./neck.js"></script>
-
     </div>
+
+    <!-- onclick='showModal("${necklaces[i].title}", "${necklaces[i].productCode}", "${necklaces[i].price}", "${necklaces[i].imgSrc}", "${necklaces[i].description}")' -->
+
+
+    <script src="./neck.js"></script>
+
+
 
 </body>
 

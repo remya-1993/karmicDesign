@@ -4,11 +4,11 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-blend-mode: color-burn;
-    background-size: cover;
-    background-color: black;
+    font-family: "Montserrat", serif;
+}
 
+.common-head {
+    min-height: 120px;
 }
 
 .head {
@@ -16,183 +16,64 @@ body {
     align-items: center;
 }
 
-.container {
-    max-width: 100%;
+
+.font-12 {
+    font-size: 12px;
 }
 
-#heading {
-    color: black;
-    font-size: 2rem;
-    font-family: "Baskervville SC", serif;
-    font-weight: 650;
-    font-style: normal;
-
+.font-14 {
+    font-size: 14px;
 }
 
-#heading:hover {
-    transform: scale(1.03);
-}
-
-a {
-    font-family: "Baskervville SC", serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f3f2f2fb;
-
-}
-
-.menu img {
-    cursor: pointer;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.menu a {
-    color: #1d0a0a;
-    font-weight: bold;
+.font-16 {
     font-size: 16px;
-    text-decoration: none;
-    gap: 40px;
 }
 
-.menu a:hover,
-.menu a.active {
-    color: rgb(163, 52, 52);
+.font-18 {
+    font-size: 18px;
 }
 
-.details .icon {
-    display: none;
+.font-20 {
+    font-size: 20px;
 }
 
-#necklace-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 0 25px;
+.font-24 {
+    font-size: 24px;
 }
 
-.necklace-item {
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.font-28 {
+    font-size: 28px;
 }
 
-.necklace-item img {
-    border-radius: 5px;
-    width: 250px;
-    height: 250px;
-    cursor: pointer;
+.font-32 {
+    font-size: 32px;
 }
 
-.necklace-item img:hover {
-    transform: scale(1.03);
+.text-black {
+    color: #000;
 }
 
-.necklace-item h3 {
-    font-size: 15px;
+.logo_size {
+    width: 100px;
+    height: 92px;
 }
 
-.necklace-item button {
-    padding: 6px;
+.bg-gold {
+    background-color: #FFD700;
+}
+
+.head-border {
+    border-bottom: 8px solid #ffd700;
+    max-width: 70px;
+}
+
+.card-border-radius {
     border-radius: 8px;
-    border: 0;
-    margin-bottom: 6px;
-    color: rgb(86, 37, 37);
-    background-color: #ede0e0c1;
-    align-items: center;
-    cursor: pointer;
 }
 
-.necklace-item button:hover {
-    transform: scale(1.06);
-}
-
-h3 {
-    color: white;
-    font-size: 25px;
-    padding: 25px;
-}
-
-h1,
-h2 {
-    color: white;
-    font-size: 15px;
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: normal;
-    margin-top: 10px;
-}
-
-.popup1 {
-    display: none;
-    background: #dcdbdb91;
-    background-position: fixed;
-    min-height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-
-.popup1 .popup-wrapper {
-    display: flex;
-    /* margin: 100px 150px 150px 150px; */
-    margin: 0 auto;
-    gap: 60px;
-    min-height: 65vh;
-    width: 100%;
-    max-width: 990px;
-    border-radius: 5px;
-    background-color: #171616;
-    border: 1px solid #212020;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    position: relative;
-}
-
-
-
-.popup2 {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: #dcdbdbb3;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-
-}
-
-.popup-wrapper2 {
-    padding: 20px;
-    background-color: #171616;
-    border-radius: 10px;
-    z-index: 9999;
-    width: 300px;
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
-
+.j-c-img {
+    height: 250px;
+    object-fit: cover;
 }
 
 .customerData {
@@ -253,7 +134,7 @@ h2 {
 .img_details p {
     color: white;
     font-size: 17px;
-    font-family: "Roboto", serif;
+    /* font-family: "Roboto", serif; */
     font-weight: 100;
     padding: 15px;
 }
@@ -286,23 +167,16 @@ h2 {
     cursor: pointer;
 
 }
-.last_para p{
-    color: white;
-    font-size: 20px;
-    padding: 0 25px;
-    margin-top: 25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.last_para span{
-    font-size:25px;
+
+.last_para p {
+    color: black;
+
 }
 
 .footer {
-    background-color: rgb(130, 110, 110);
+    background-color: black;
     border-radius: 5px;
-    padding: 10px 15px;
     min-height: 100px;
-    margin-top: 50px;
 }
 
 .footer h4 {
@@ -320,184 +194,66 @@ h2 {
     text-decoration: none;
     color: white;
     font-size: 15px;
+}
 
+.data p {
+    color: white;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
 }
-.socialMedia{
+
+.socialMedia {
     border: 1px solid rgb(115, 93, 93);
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
     align-items: center;
     padding: 5px;
+    color: white;
 }
-.socialImg{
+
+.socialImg {
     display: flex;
     gap: 15px;
     cursor: pointer;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
+
+.cusName {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    height: 36px;
+}
+
 @media only screen and (max-width: 767px) {
-    .container {
-        width: 100%;
-        max-width: 990px;
-        /* padding:  5px;         */
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        display: flex;
+    .logo_size {
+        width: 60px;
+        height: 53px;
     }
 
-    .header {
-        max-width: 100%;
-        /* width: 100%; */
-        padding: 5px;
-        height: 50px;
-        
-    }
-    #heading {
-        font-size: 25px;
+    .common-head {
+        min-height: 70px;
     }
 
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-
-    .details .responsive {
-        display: flex;
-        text-align: right;
-    }
-
-    .details .icon {
-        display: block;
-    }
-
-    .details .menu {
-        display: none;
-    }
-
-    .details.responsive .menu {
-        display: block;
+    .last_para {
         text-align: center;
-        position: absolute;
-        /* padding: 15px; */
-        background-color: #fff;
-        border-radius: 4px;
-        top: 50px;
-        right: 0;
-        z-index: 1;
-        gap: 20px;
     }
-
-    .details.responsive .menu a {
-        display: block;
-        color: #000;
-        font-size: 10px;
-    }
-
-    .details.responsive {
-        display: flex;
-    }
-
-    .details.responsive {
-        display: block;
-        text-align: left;
-        position: absolute;
-        padding: 15px;
-        background-color: #fff;
-        border-radius: 4px;
-        top: 50px;
-        right: 0;
-        z-index: 1;
-    }
-
-    .details.responsive a {
-        display: block;
-        color: #171616;
-        font-size: 20px;
-        padding: 15px;
-
-    }
-
-    .box1 {
-        max-width: 100%;
-    }
-
-    .necklace-item {
-        align-items: center;
-        max-width: 100%;
-        width: 300px;
-    }
-
-    .necklace-item img {
-        align-items: center;
-        margin: 0 auto;
-        width: 250px
-    }
-
-    .necklace-item h3,
-    h1,
-    h2 {
-        font-size: 15px;
-    }
-
-    .necklaces h1,
-    h2,
-    button {
-        font-size: 15px;
-        align-items: center;
-
-    }
-
-    .mainHead {
-        font-size: 10px;
-    }
-
-    .popup1 {
-        width: 100%;
-    }
-
-    .popup-wrapper {
-        max-width: 990px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: center;
-        position: relative;
-    }
-
-    .popup-wrapper img {
-        width: 70%;
-        margin-top: 30px;
-    }
-
-    .popup-wrapper .close {
-        width: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
 
     .footer {
-        /* padding: 1px;     */
         max-width: 100%;
-        
     }
 
     .data {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* width: 100%; */
         text-align: center;
-        padding: 5px;
     }
 
     .wrapper h4 {

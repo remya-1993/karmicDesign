@@ -3,84 +3,84 @@ const earrings = [
     title: "Multi Color Danglers",
     productCode: "Kd-51",
     price: 150,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.21.13 PM.jpeg",
     description: "Made up with multicoloured stones and beads.",
   },
   {
     title: "Golden Jhumka",
     productCode: "Kd-52",
     price: 125,
-    imgSrc: "./img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-17 at 10.55.17 AM.jpeg",
     description: "Made up with golden and black coloured beads. Its suitable for traditional dresses.",
   },
   {
     title: "Multi Color Jhumka",
     productCode: "Kd-53",
     price: 120,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.22.46 PM.jpeg",
     description: "Made up with multicoloured beads along with ear chain.",
   },
   {
     title: "Beaded Earrings",
     productCode: "Kd-54",
     price: 100,
-    imgSrc: "./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg",
     description: "Made up with multicoloured beads.",
   },
   {
     title: "White Color Danglers",
     productCode: "Kd-55",
     price: 170,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 9.21.12 PM.jpeg",
     description: "Made up with white-coloured beads.",
   },
   {
     title: "Traditional Jhumka",
     productCode: "Kd-56",
     price: 115,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 10.51.14 PM.jpeg",
     description: "Made up with golden coloured beads.",
   },
   {
     title: "Beaded Danglers",
     productCode: "Kd-57",
     price: 140,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 10.54.26 PM.jpeg",
     description: "Made up with multicoloured beads.",
   },
   {
     title: "Stone Earrings",
     productCode: "Kd-58",
     price: 110,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 10.57.36 PM.jpeg",
     description: "Made up with stone and multicoloured beads.",
   },
   {
     title: "Multi Jhumka",
     productCode: "Kd-59",
     price: 130,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 10.59.27 PM.jpeg",
     description: "Made up with golden beads.",
   },
   {
     title: "Black Stone Earrings",
     productCode: "Kd-60",
     price: 180,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 10.03.40 PM.jpeg",
     description: "Made up with black-coloured stones.",
   },
   {
     title: "Multi Color Stud",
     productCode: "Kd-61",
     price: 180,
-    imgSrc: "./img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-31 at 9.48.25 PM.jpeg",
     description: "Made up with multicoloured stones.",
   },
   {
     title: "Metal Jhumka",
     productCode: "Kd-62",
     price: 180,
-    imgSrc: "./img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg",
+    image: "./img/WhatsApp Image 2024-08-30 at 11.01.32 PM.jpeg",
     description: "Made up with metal beads.",
   },
 ];
@@ -92,20 +92,35 @@ function earringsPage() {
 
 
     earringsHTML += `
-      <div class="earrings-item">
->
-        <img src="${earrings[i].imgSrc}" onclick='showModal("${earrings[i].title}", "${earrings[i].productCode}", "${earrings[i].price}", "${earrings[i].imgSrc}", "${earrings[i].description}")'>  alt="${earrings[i].title}" width="230px" />
-        <h1>${earrings[i].title}</h1>
-        <h2>Product Code: ${earrings[i].productCode}</h2>
-        <h3>Price: ${earrings[i].price}</h3>
-        <p>${earrings[i].description}</p>
+       <div class="col">
+     <div class="card h-100 card-border-radius overflow-hidden">
+        <img src="${earrings[i].image}"  class="card-img-top w-100 j-c-img" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${earrings[i].title}" 
+  data-code="${earrings[i].productCode}" 
+  data-price="${earrings[i].price}" 
+  data-img="${earrings[i].image}" 
+  data-description="${earrings[i].description}"/>
+        <div class="card-body pb-0">
+        <h5 class="font-16 fw-semibold text-start pt-3">${earrings[i].title}</h5>
+        <h6 class="class="fw-semibold font-16"">${earrings[i].productCode} <span class="font-12 fw-light">(Product Code)</span></h6>
+        <p class="font-14 fw-medium mb-0">${earrings[i].description}</p>
+        </div>
+         <div class="card-footer text-center border-0 bg-white pb-3 pt-4 d-flex align-items-center justify-content-between">
+        <h3 class="font-20 fw-bold mb-0">Rs.${earrings[i].price}</h3>
         <button 
-          class='buy-btn' 
-          onclick='showModal("${earrings[i].title}", "${earrings[i].productCode}", "${earrings[i].price}", "${earrings[i].imgSrc}", "${earrings[i].description}")'>
+         class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-title="${earrings[i].title}" 
+  data-code="${earrings[i].productCode}" 
+  data-price="${earrings[i].price}" 
+  data-img="${earrings[i].image}" 
+  data-description="${earrings[i].description}">
           Know More..
         </button>
       </div>
+      </div>
+      </div>
     `;
+
     console.log(earrings[i].title);
   }
 
@@ -114,17 +129,34 @@ function earringsPage() {
 }
 earringsPage();
 
-function showModal(title, productCode, price, imgSrc, description) {
+const exampleModal = document.getElementById('exampleModal');
 
-  document.getElementById('modal-title').textContent = title;
-  document.getElementById('modal-code').textContent = productCode;
-  document.getElementById('modal-price').textContent = price;
-  document.getElementById('modal-img').src = imgSrc;
-  document.getElementById('modal-description').textContent = description;
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  const button = event.relatedTarget;
 
-  document.getElementById('popup1').style.display = 'block';
-  document.body.classList.add('modal-open');
-}
+  // Extract info from data-* attributes
+  const title = button.getAttribute('data-title');
+  const code = button.getAttribute('data-code');
+  const price = button.getAttribute('data-price');
+  const img = button.getAttribute('data-img');
+  const description = button.getAttribute('data-description');
+
+  // Update modal content
+  const modalTitle = document.getElementById('modal-title');
+  const modalCode = document.getElementById('modal-code');
+  const modalPrice = document.getElementById('modal-price');
+  const modalImg = document.getElementById('modal-img');
+  const modalDescription = document.getElementById('modal-description');
+
+  modalTitle.textContent = title;
+  modalCode.textContent = code;
+  modalPrice.textContent = `Rs. ${price}`;
+  modalImg.src = img;
+  modalDescription.textContent = description;
+});
+
+
 
 function closeModal() {
   document.getElementById('popup1').style.display = 'none';

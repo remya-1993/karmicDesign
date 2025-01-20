@@ -17,126 +17,191 @@
     <meta property="og:url" content="https://karmic-design.vercel.app">
     <meta property="og:type" content="website">
     <title>Jewelry for Ladies & Kids | Karmic Designs</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./kd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="./kd.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Protest+Guerrilla&family=Stint+Ultra+Condensed&display=swap"
-    rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Stint+Ultra+Condensed&display=swap"
-    rel="stylesheet">
+
 
 <body>
 
+    <nav class="navbar navbar-expand-lg position-fixed start-0 end-0 top-0 bg-black" style="z-index: 99;">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/kar_logo.png" alt="karmic_logo" class="logo_size">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="./img/menu.png" alt="Menu" style="width: 42px; height: 42px;">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 font-14 text-white fw-medium" aria-current="page"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./neck.html">Neck Pieces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./ear.html">Earrings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./bangles.html">Bangles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./rings.html">Finger Rings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 font-14 text-white fw-medium" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">
+                            <img onclick="cart()" src="./img/online-shopping.png" alt="cart_img" width="24px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 bg-black">
+        <div class="container">
+            <div class="row align-items-center pt-5 mt-5 mt-md-0 g-4">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h1 class="banner-title text-center text-md-start pb-3 mb-0">Unveiling <span class="text-gold">Luxury</span>, One <span class="text-gold">Gem</span> at a Time
+                    </h1>
+                    <h2 class="banner-text text-white text-center text-md-start mb-0">
+                        Every gem tells a story, and every jewel is a timeless treasure waiting to shine in your
+                        journey.
+                    </h2>
+                    <a href="./contact.html" class="d-block pt-5">
+                        <button type="button" class="banner_contact_btn px-3 py-1 bg-transparent">Contact Us</button>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 position-relative text-end">
+                    <img src="img/flip_2.png" alt="necklace" class="w-100"
+                        style="margin-bottom:-48px; max-width: 450px;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
-        <div class="header">
-            <div class="head">
-                <img src="./img/removebg-logo1.png" alt="karmic_logo" width=" 100px" height="75px">
-                <h1 id="heading">Karmic Designs</h1>
+        <div class="py-5">
+            <div class="pb-3">
+                <h2 class="font-24 fw-bold pb-1 mb-0">Our Jewelry Collections</h2>
+                <div class="head-border"></div>
             </div>
-            <div class="details" id="myTopnav">
-                <div class="menu">
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./neck.html">Neck Pieces</a>
-                    <a href="./ear.html">Earrings</a>
-                    <a href="./bangles.html">Bangles</a>
-                    <a href="./rings.html">Finger Rings</a>
-                    <a href="./contact.html"> Contact Us</a>
-                    <img onclick="cart()" src="./img/shopping-cart.png" alt="cart_img" width="30px">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5 g-4 pt-3">
+                <div class="col">
+                    <div class="card h-100 card-border-radius overflow-hidden">
+                        <img src="./img/WhatsApp Image 2024-08-18 at 5.38.01 PM.jpeg" onclick="more1()" alt="necklace"
+                            class="card-img-top w-100 j-c-img">
+                        <div class="card-body pb-0">
+                            <h5 class="font-18 fw-semibold text-center pt-3">Neck chain</h5>
+                        </div>
+                        <div class="card-footer text-center border-0 bg-white pb-3 pt-2">
+                            <button onclick="more1()" class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold">View
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 card-border-radius overflow-hidden">
+                        <img src="./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg" onclick="more()" class="card-img-top j-c-img"
+                            alt="earrings">
+                        <div class="card-body pb-0">
+                            <h5 class="font-18 fw-semibold text-center pt-3">Ear Rings</h5>
+                        </div>
+                        <div class="card-footer text-center border-0 bg-white pb-3 pt-2">
+                            <button onclick="more()" class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold">View
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 card-border-radius overflow-hidden">
+                        <img src="./img/WhatsApp Image 2024-08-29 at 10.19.38 PM.jpeg" onclick="more2()" class="card-img-top j-c-img"
+                            alt="earrings">
+                        <div class="card-body pb-0">
+                            <h5 class="font-18 fw-semibold text-center pt-3">Bangles</h5>
+                        </div>
+                        <div class="card-footer text-center border-0 bg-white pb-3 pt-2">
+                            <button onclick="more2()" class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold">View
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 card-border-radius overflow-hidden">
+                        <img src="./img/WhatsApp Image 2024-08-29 at 10.20.26 PM.jpeg" onclick="more3()" class="card-img-top j-c-img"
+                            alt="earrings">
+                        <div class="card-body pb-0">
+                            <h5 class="font-18 fw-semibold text-center pt-3">Finger Rings</h5>
+                        </div>
+                        <div class="card-footer text-center border-0 bg-white pb-3 pt-2">
+                            <button onclick="more3()" class="border-0 btn bg-gold font-12 py-1 px-3 fw-bold">View
+                                More</button>
+                        </div>
+                    </div>
                 </div>
 
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="./img/hamburger.png" alt="Menu" width="25px">
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="main-wrapper">
-            <div class="content1">
-
-                <div class="img1">
-                    <img src="img/removebg 2.png" alt="necklace" style="max-width: 300px; width: 100%;" height="390px">
-                </div>
-                <div class="para1">
-                    <p>"Every gem tells a story, and every jewel is a timeless treasure waiting to shine in your
-                        journey."</p>
-                </div>
-                <div class="img2">
-                    <img src="img/bang_3-removebg-preview.png" alt="bangle" style="max-width: 300px; width: 100%;"
-                        height="390px">
-                </div>
-
-            </div>
-        </div>
-        <div class="box1">
-            <h2>Our Jewelry Collections</h2>
-            <div class="collections">
-
-                <div class="clts1">
-                    <img src="./img/WhatsApp Image 2024-08-18 at 5.38.01 PM.jpeg" alt="necklace"
-                        style="max-width: 300px; width: 100%;">
-                    <h5>Neck chain</h5>
-                    <button onclick="more1()">View More</button>
-                </div>
-                <div class="clts1">
-                    <img src="./img/WhatsApp Image 2024-08-28 at 10.14.43 AM.jpeg" alt="earrings"
-                        style="max-width: 300px; width: 100%;">
-                    <h5>Earrings</h5>
-                    <button onclick="more()">View More</button>
-                </div>
-                <div class="clts1">
-                    <img src="./img/WhatsApp Image 2024-08-29 at 10.19.38 PM.jpeg" alt="bangles"
-                        style="max-width: 300px; width: 100%;">
-                    <h5>Bangles</h5>
-                    <button onclick="more2()">View More</button>
-                </div>
-                <div class="clts1">
-                    <img src="./img/WhatsApp Image 2024-08-29 at 10.20.26 PM.jpeg" alt="fingerrings"
-                        style="max-width: 300px; width: 100%;">
-                    <h5>Finger Rings</h5>
-                    <button onclick="more3()">View More</button>
-                </div>
             </div>
 
-            <div class="end1">
-                <h2>ABOUT US...</h2>
+            <div class="py-5 font-14 fw-medium">
+                <div class="pb-3">
+                    <h2 class="font-24 fw-bold pb-1 mb-0">About Us</h2>
+                    <div class="head-border"></div>
+                </div>
                 <p>Welcome to Karmic Design, your one-stop destination for stunning, handmade jewelry that
-                    combines elegance, creativity, and affordability. <br> We are thrilled to introduce you to our
+                    combines elegance, creativity, and affordability. We are thrilled to introduce you to our
                     carefully
-                    crafted collection of neckpieces, bangles, earrings, and finger rings <br>that embody timeless
+                    crafted collection of neckpieces, bangles, earrings, and finger rings that embody timeless
                     beauty
                     and intricate craftsmanship.</p>
-                <P>Kamic Design was born out of a passion for design, artistry, and the desire to make beautiful jewelry
-                    accessible to everyone. <br>We are a team of dedicated artisans, designers, and jewelry enthusiasts
+                <P>Karmic Design was born out of a passion for design, artistry, and the desire to make beautiful
+                    jewelry
+                    accessible to everyone. We are a team of dedicated artisans, designers, and jewelry enthusiasts
                     who
-                    are committed to redefining the traditional concept of jewelry. <br>By focusing on handmade designs,
+                    are committed to redefining the traditional concept of jewelry. By focusing on handmade designs,
                     we
-                    ensure that each piece tells its own story, carries its own charm, and reflects the skill <br>and
+                    ensure that each piece tells its own story, carries its own charm, and reflects the skill and
                     dedication of the hands that created it.</P>
                 <p>At Karmic Designs, we take pride in curating an exquisite collection of distinctive and
-                    budget-conscious jewelry. The unwavering support <br> and trust of our esteemed customers have
+                    budget-conscious jewelry. The unwavering support and trust of our esteemed customers have
                     enabled us
-                    to successfully deliver over 1,800 products to date. We deeply appreciate <br> your continued
+                    to successfully deliver over 1,800 products to date. We deeply appreciate your continued
                     confidence
-                    in Karmic Designs. Our jewelry collection is designed to suit diverse tastes and preferences. <br>
+                    in Karmic Designs. Our jewelry collection is designed to suit diverse tastes and preferences.
                     From
                     bold
                     and statement-making neckpieces to subtle and elegant earrings, our pieces cater to a variety of
-                    jewelry styles. <br> Whether you prefer classic jewelry designs, modern aesthetics, or a blend of
+                    jewelry styles. Whether you prefer classic jewelry designs, modern aesthetics, or a blend of
                     both,
                     you’ll find
-                    something you love at Karmic Design. <br> Your satisfaction is our priority.</p>
+                    something you love at Karmic Design. Your satisfaction is our priority.</p>
+            </div>
 
-                <h2>Our Mission</h2>
+            <div class="pb-5 font-14 fw-medium">
+                <div class="pb-3">
+                    <h2 class="font-24 fw-bold pb-1 mb-0">Our Mission</h2>
+                    <div class="head-border"></div>
+                </div>
                 <p>Our mission is simple yet profound: to make beautiful, handcrafted jewelry accessible to everyone. We
-                    aim to inspire confidence <br> and joy through our designs, helping you celebrate the special
+                    aim to inspire confidence and joy through our designs, helping you celebrate the special
                     moments in
                     your life with jewelry that’s as unique as you are.</p>
 
@@ -146,68 +211,68 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div class="wrapper">
-                <h4> <u>Contact Us</u></h4>
-                <br>
-                <div class="data">
-                    <div>
-                        <a href="">ADDRESS</a>
-                        <br>
-                        <p class="add">Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
-                    </div>
-                    <div>
-                        <a href="">CALL US</a>
-                        <br>
-
-                        <div class="number">
-                            <p>+91 8590210665 </p>
-
-                        </div>
-                    </div>
-                    <div>
-                        <a href="">EMAIL US</a>
-                        <br>
-
-                        <div class="mail">
-                            karmic24@gmail.com
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="socialMedia">
-                <span>© 2025 Karmic Design.</span>
-                <div class="socialImg">
-
-                    <a href="https://www.instagram.com/karmic_designs_/profilecard/?igsh=MTB3bTh1eGRvaDcxdQ==" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/insta-bw.png" alt="instagram" width="25px">
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61557533731751&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/facebook.png" alt="facebook" width="25px">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
 
         <div>
 
         </div>
-
-
-
-
-
-        <script src="./kd.js"></script>
     </div>
+
+    <div class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="pb-2">
+                <h2 class="font-18 fw-bold pb-1 mb-0 text-white">Contact Us</h2>
+            </div>
+            <div class="data font-14 fw-medium">
+                <div>
+                    <a href="">Address :</a>
+                    <br>
+                    <p class="add">Karmic Designs, Chathinamkulam, chandanathope p o<br>691014</p>
+                </div>
+                <div>
+                    <a href="">Call Us :</a>
+                    <br>
+
+                    <div class="number">
+                        <p>+91 8590210665 </p>
+
+                    </div>
+                </div>
+                <div>
+                    <a href="">Email Us :</a>
+                    <br>
+
+                    <div class="mail">
+                        <p>karmic24@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-bottom: 1px solid #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-white font-12">© 2025 Karmic Design.</div>
+                <div class="col-6 text-white font-12 text-end">
+
+                    <a href="https://www.instagram.com/karmic_designs_/profilecard/?igsh=MTB3bTh1eGRvaDcxdQ=="
+                        target="_blank" rel="noopener noreferrer" class="me-3">
+                        <img src="./img/instagram-karmic.png" alt="instagram" width="25px">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61557533731751&mibextid=ZbWKwL" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./img/facebook-karmic.png" alt="facebook" width="25px">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./kd.js"></script>
 </body>
 
 </html>
