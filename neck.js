@@ -114,6 +114,26 @@ necklaces.push({
     price: 180,
     image: "./img/invisible3.jpg",
     description: "A stunning simple necklace suitable for formal occasions.",
+  },
+  {
+    title: "Golden Chocker",
+    productCode: "Kd-17",
+    price: 250,
+    image: "./img/1.jpg",
+    description: "Made up of stones. It is suitable for sarees. Green and golden color stones with a neck covered golden chocker.",
+  },
+  {
+    title: "Golden Chocker",
+    productCode: "Kd-18",
+    price: 280,
+    image: "./img/2.jpg",
+    description: "Made up of red stones. It is suitable for sarees. Red and golden color stones with a neck covered golden chocker.",
+  }, {
+    title: "Golden necklace",
+    productCode: "Kd-19",
+    price: 150,
+    image: "./img/3.jpg",
+    description: "Made up of stones. It is suitable for sarees. white and golden color stones with a long golden chain.",
   }
 );
 
