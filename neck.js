@@ -123,18 +123,19 @@ necklaces.push({
     description: "Made up of stones. It is suitable for sarees. Green and golden color stones with a neck covered golden chocker.",
   },
   {
-    title: "Golden Chocker",
-    productCode: "Kd-18",
-    price: 280,
-    image: "./img/2.jpg",
-    description: "Made up of red stones. It is suitable for sarees. Red and golden color stones with a neck covered golden chocker.",
-  }, {
     title: "Golden necklace",
-    productCode: "Kd-19",
+    productCode: "Kd-18",
     price: 150,
     image: "./img/3.jpg",
     description: "Made up of stones. It is suitable for sarees. white and golden color stones with a long golden chain.",
   },
+  {
+    title: "Golden Chocker",
+    productCode: "Kd-19",
+    price: 280,
+    image: "./img/2.jpg",
+    description: "Made up of red stones. It is suitable for sarees. Red and golden color stones with a neck covered golden chocker.",
+  }, 
   {
     title: "Golden Chain",
     productCode: "Kd-20",
