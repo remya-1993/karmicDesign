@@ -134,6 +134,13 @@ necklaces.push({
     price: 150,
     image: "./img/3.jpg",
     description: "Made up of stones. It is suitable for sarees. white and golden color stones with a long golden chain.",
+  },
+  {
+    title: "Golden Chain",
+    productCode: "Kd-20",
+    price: 150,
+    image: "./img/4.jpg",
+    description: "A stunning simple long chain necklace suitable for formal occasions.",
   }
 );
 
