@@ -125,23 +125,23 @@ necklaces.push({
   {
     title: "Golden necklace",
     productCode: "Kd-18",
-    price: 150,
+    price: 250,
     image: "./img/3.jpg",
     description: "Made up of stones. It is suitable for sarees. white and golden color stones with a long golden chain.",
   },
   {
     title: "Golden Chocker",
     productCode: "Kd-19",
-    price: 280,
+    price: 450,
     image: "./img/2.jpg",
-    description: "Made up of red stones. It is suitable for sarees. Red and golden color stones with a neck covered golden chocker.",
+    description: "Traditional manga neckalce with ruby stone",
   }, 
   {
     title: "Golden Chain",
     productCode: "Kd-20",
-    price: 150,
+    price: 250,
     image: "./img/4.jpg",
-    description: "A stunning simple long chain necklace suitable for formal occasions.",
+    description: "Anti Tarnis chain 18k gold plated jewellery With water proof and tarnish free",
   }
 );
 
