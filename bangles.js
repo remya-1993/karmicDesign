@@ -1,4 +1,195 @@
 const bangles = [
+{
+    title: "18k gold plated bangles",
+    productCode: "Kd-078",
+    price: 399,
+    image: "./img/bang30 (1).jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-079",
+    price: 399,
+    image: "./img/bang30 (2).jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-080",
+    price: 399,
+    image: "./img/bang30 (3).jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+
+
+{
+    title: "18k gold plated bangles",
+    productCode: "Kd-081",
+    price: 399,
+    image: "./img/bang25.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-082",
+    price: 399,
+    image: "./img/bang26.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-083",
+    price: 399,
+    image: "./img/bang27.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-084",
+    price: 399,
+    image: "./img/bang28.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-085",
+    price: 399,
+    image: "./img/bang29.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+
+
+ {
+    title: "18k gold plated bangles",
+    productCode: "Kd-086",
+    price: 399,
+    image: "./img/bang20.png",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+   {
+    title: "18k gold plated bangles",
+    productCode: "Kd-087",
+    price: 399,
+    image: "./img/bang21.png",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+   {
+    title: "18k gold plated bangles",
+    productCode: "Kd-088",
+    price: 399,
+    image: "./img/bang22.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+   {
+    title: "18k gold plated bangles",
+    productCode: "Kd-089",
+    price: 399,
+    image: "./img/bang23.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+   {
+    title: "18k gold plated bangles",
+    productCode: "Kd-090",
+    price: 399,
+    image: "./img/bang24.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+
+
+{
+    title: "18k gold plated bangles",
+    productCode: "Kd-091",
+    price: 399,
+    image: "./img/bang15.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-092",
+    price: 399,
+    image: "./img/bang16.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-093",
+    price: 399,
+    image: "./img/bang17.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-094",
+    price: 399,
+    image: "./img/bang18.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-095",
+    price: 399,
+    image: "./img/bang19.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+
+
+{
+    title: "18k gold plated bangles",
+    productCode: "Kd-096",
+    price: 399,
+    image: "./img/bang10.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+  },
+
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-097",
+    price: 399,
+    image: "./img/bang11.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+    
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-098",
+    price: 399,
+    image: "./img/bang12.jpg",
+   description: "18k gold plated Anti tarnish bangles with water proof."
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-099",
+    price: 399,
+    image: "./img/bang13.jpg",
+    description: "18k gold plated Anti tarnish bangles with water proof."
+  },
+  {
+    title: "18k gold plated bangles",
+    productCode: "Kd-100",
+    price: 399,
+    image: "./img/bang14.jpg",
+   description: "18k gold plated Anti tarnish bangles with water proof."
+  },
+
+
   {
     title: "Beads bangles",
     productCode: "Kd-101",
