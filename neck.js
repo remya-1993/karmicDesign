@@ -1,5 +1,110 @@
 
 const necklaces = [
+
+   {
+    title: "Long Palakka Maala",
+    productCode: "Kd-0011",
+    price: 800,
+    image: "./img/neck1.jpg",
+    description: "Long palak maala made with studs.",
+  },
+   {
+    title: "Enamel nagapadam neckchain",
+    productCode: "Kd-0011",
+    price: 300,
+    image: "./img/neck14.jpg",
+    description: "Enamel nagapadam neckchain with multicoloured studs and gold polish.",
+  },
+   {
+    title: "Coin choker set with earrings ",
+    productCode: "Kd-0012",
+    price: 550,
+    image: "./img/neck2.jpg",
+    description: "Made up of golden coins and chains with earings.",
+  },
+   {
+    title: "Gold plated coin with stones neckpiece with earrings",
+    productCode: "Kd-0013",
+    price: 530,
+    image: "./img/neck3.jpg",
+    description: "Made up of gold plated coin with stones neckpiece with earrings.",
+  },
+   {
+    title: "Lotus chocker ",
+    productCode: "Kd-0014",
+    price: 230,
+    image: "./img/neck4.jpg",
+    description: "Made with gold chain and lotus stones."
+  },
+   {
+    title: "Lotus simple necklace",
+    productCode: "Kd-0015",
+    price: 190,
+    image: "./img/neck5.jpg",
+    description: "Made with gold chain and lotus stones.",
+  },
+   {
+    title: "Lotus chocker ",
+    productCode: "Kd-0016",
+    price: 230,
+    image: "./img/neck6.jpg",
+    description: "Made with gold chain and lotus stones.",
+  },
+   {
+    title: "Single Line Neckpiece",
+    productCode: "Kd-0017",
+    price: 150,
+    image: "./img/neck7.jpg",
+    description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
+  },
+   {
+    title: "Single Line Neckpiece",
+    productCode: "Kd-0018",
+    price: 150,
+    image: "./img/neck8.jpg",
+    description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
+  },
+
+    {
+    title: "Traditional enamel necklace",
+    productCode: "Kd-0019",
+    price: 300,
+    image: "./img/neck9.jpg",
+    description: "Traditional enamel necklace with multicoloured beads and multicoloured stones.",
+  },
+    {
+    title: "Traditional enamel necklace",
+    productCode: "Kd-0020",
+    price: 300,
+    image: "./img/neck10.jpg",
+    description: "Traditional enamel necklace with multicoloured beads and multicoloured stones.",
+  },
+    {
+    title: "Lotus chain with hanging ",
+    productCode: "Kd-0021",
+    price: 200,
+    image: "./img/neck11.jpg",
+    description: "Made up of gold chain with lotaus stones.",
+  },
+    {
+    title: "Traditional enamel necklace",
+    productCode: "Kd-0022",
+    price: 300,
+    image: "./img/neck12.jpg",
+    description: "Traditional enamel necklace with multicoloured beads and multicoloured stones.",
+  },
+    {
+    title: "Traditional enamel necklace",
+    productCode: "Kd-0023",
+    price: 300,
+    image: "./img/neck13.jpg",
+    description: "Traditional enamel necklace with multicoloured beads and multicoloured stones.",
+  },
+
+
+
+
+
   {
     title: "Single Line Neckpiece",
     productCode: "Kd-01",
