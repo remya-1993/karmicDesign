@@ -53,7 +53,7 @@ const necklaces = [
    {
     title: "Single Line Neckpiece",
     productCode: "Kd-0017",
-    price: 150,
+    price: 650,
     image: "./img/neck7.jpg",
     description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
   },
@@ -113,7 +113,8 @@ const necklaces = [
     description: "Made up of stones. It is a long chain suitable for sarees. Green and white color stones with a long golden chain.",
   },
   {
-    title: "Beaded Neckpiece",
+    
+    title: "Beaded Neckpiece (SOLD OUT)",
     productCode: "Kd-02",
     price: 170,
     image: "./img/WhatsApp Image 2024-08-17 at 7.42.58 PM (1).jpeg",
@@ -134,7 +135,7 @@ const necklaces = [
     description: "Made with high-quality white and golden coloured beads. Suitable for both casual and formal wear.",
   },
   {
-    title: "Single Beaded Chain",
+    title: "Single Beaded Chain (SOLD OUT)",
     productCode: "Kd-05",
     price: 100,
     image: "./img/WhatsApp Image 2024-08-31 at 10.14.39 PM.jpeg",
@@ -155,7 +156,7 @@ const necklaces = [
     description: "Made with golden coloured metals along with matching earrings. Suitable for both casual and formal wear.",
   },
   {
-    title: "Long Golden Chain",
+    title: "Long Golden Chain (SOLD OUT)",
     productCode: "Kd-08",
     price: 220,
     image: "./img/WhatsApp Image 2024-08-31 at 10.11.23 PM.jpeg",
@@ -183,7 +184,7 @@ const necklaces = [
     description: "Traditional Neckpiece chain made with golden and white coloured stones and beads with earrings. Suitable for both casual and formal wear.",
   },
   {
-    title: "Fabric Long Chain",
+    title: "Fabric Long Chain (SOLD OUT)",
     productCode: "Kd-12",
     price: 170,
     image: "./img/WhatsApp Image 2024-08-31 at 10.19.18 PM.jpeg",
